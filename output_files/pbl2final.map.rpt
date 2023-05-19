@@ -1,0 +1,695 @@
+Analysis & Synthesis report for pbl2final
+Fri May 19 15:39:50 2023
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Port Connectivity Checks: "reguniversal:comb_15"
+  7. Port Connectivity Checks: "reguniversal:comb_14"
+  8. Port Connectivity Checks: "reguniversal:comb_13"
+  9. Port Connectivity Checks: "reguniversal:comb_12"
+ 10. Port Connectivity Checks: "contador:comb_5|fft:ff1"
+ 11. Port Connectivity Checks: "divisor:comb_4|fft:comb_26"
+ 12. Port Connectivity Checks: "divisor:comb_4|fft:comb_25"
+ 13. Port Connectivity Checks: "divisor:comb_4|fft:comb_24"
+ 14. Port Connectivity Checks: "divisor:comb_4|fft:comb_23"
+ 15. Port Connectivity Checks: "divisor:comb_4|fft:comb_22"
+ 16. Port Connectivity Checks: "divisor:comb_4|fft:comb_21"
+ 17. Port Connectivity Checks: "divisor:comb_4|fft:comb_20"
+ 18. Port Connectivity Checks: "divisor:comb_4|fft:comb_19"
+ 19. Port Connectivity Checks: "divisor:comb_4|fft:comb_18"
+ 20. Port Connectivity Checks: "divisor:comb_4|fft:comb_17"
+ 21. Port Connectivity Checks: "divisor:comb_4|fft:comb_16"
+ 22. Port Connectivity Checks: "divisor:comb_4|fft:comb_15"
+ 23. Port Connectivity Checks: "divisor:comb_4|fft:comb_14"
+ 24. Port Connectivity Checks: "divisor:comb_4|fft:comb_13"
+ 25. Port Connectivity Checks: "divisor:comb_4|fft:comb_12"
+ 26. Port Connectivity Checks: "divisor:comb_4|fft:comb_11"
+ 27. Port Connectivity Checks: "divisor:comb_4|fft:comb_10"
+ 28. Port Connectivity Checks: "divisor:comb_4|fft:comb_9"
+ 29. Port Connectivity Checks: "divisor:comb_4|fft:comb_8"
+ 30. Port Connectivity Checks: "divisor:comb_4|fft:comb_7"
+ 31. Port Connectivity Checks: "divisor:comb_4|fft:comb_6"
+ 32. Port Connectivity Checks: "divisor:comb_4|fft:comb_5"
+ 33. Port Connectivity Checks: "divisor:comb_4|fft:comb_4"
+ 34. Port Connectivity Checks: "divisor:comb_4|fft:comb_3"
+ 35. Port Connectivity Checks: "divisor:comb_4"
+ 36. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Fri May 19 15:39:50 2023           ;
+; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name               ; pbl2final                                   ;
+; Top-level Entity Name       ; principal                                   ;
+; Family                      ; MAX II                                      ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EPM240T100C5       ;                    ;
+; Top-level entity name                                            ; principal          ; pbl2final          ;
+; Family name                                                      ; MAX II             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                    ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                      ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
+; principal.v                      ; yes             ; User Verilog HDL File  ; C:/Users/luigu/Documents/PBL2FINAL/principal.v    ;         ;
+; reguniversal.v                   ; yes             ; User Verilog HDL File  ; C:/Users/luigu/Documents/PBL2FINAL/reguniversal.v ;         ;
+; mux4x1.v                         ; yes             ; User Verilog HDL File  ; C:/Users/luigu/Documents/PBL2FINAL/mux4x1.v       ;         ;
+; mux8x1.v                         ; yes             ; User Verilog HDL File  ; C:/Users/luigu/Documents/PBL2FINAL/mux8x1.v       ;         ;
+; divisor.v                        ; yes             ; User Verilog HDL File  ; C:/Users/luigu/Documents/PBL2FINAL/divisor.v      ;         ;
+; fft.v                            ; yes             ; User Verilog HDL File  ; C:/Users/luigu/Documents/PBL2FINAL/fft.v          ;         ;
+; ffd.v                            ; yes             ; User Verilog HDL File  ; C:/Users/luigu/Documents/PBL2FINAL/ffd.v          ;         ;
+; contador.v                       ; yes             ; User Verilog HDL File  ; C:/Users/luigu/Documents/PBL2FINAL/contador.v     ;         ;
+; demux.v                          ; yes             ; User Verilog HDL File  ; C:/Users/luigu/Documents/PBL2FINAL/demux.v        ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reguniversal:comb_15"                                                                                                                                                                ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; d0      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d0[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d1      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d1[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d2      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d2[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d3      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d3[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d4      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d4[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d5      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d5[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d6      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d6[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d7      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d7[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d8      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d8[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d9      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d9[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d10     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d10[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d11     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d11[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d12     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d12[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d13     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d13[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d14     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d14[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d15     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d15[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reguniversal:comb_14"                                                                                                                                                                ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; d0      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d0[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d1      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d1[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d2      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d2[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d3      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d3[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d4      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d4[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d5      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d5[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d6      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d6[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d7      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d7[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d8      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d8[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d9      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d9[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d10     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d10[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d11     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d11[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d12     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d12[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d13     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d13[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d14     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d14[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d15     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d15[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reguniversal:comb_13"                                                                                                                                                                ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; d0      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d0[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d1      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d1[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d2      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d2[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d3      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d3[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d4      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d4[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d5      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d5[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d6      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d6[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d7      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d7[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d8      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d8[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d9      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d9[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d10     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d10[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d11     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d11[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d12     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d12[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d13     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d13[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d14     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d14[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d15     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d15[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reguniversal:comb_12"                                                                                                                                                                ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; d0      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d0[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d1      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d1[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d2      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d2[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d3      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d3[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d4      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d4[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d5      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d5[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d6      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d6[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d7      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d7[-1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d8      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d8[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d9      ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d9[-1]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d10     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d10[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d11     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d11[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; d12     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d12[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d13     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d13[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d14     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d14[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; d15     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d15[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador:comb_5|fft:ff1"                                                                                                                                                           ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; t     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; t[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_26"                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_25"                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_24"                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_23"                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_22"                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_21"                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_20"                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_19"                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_18"                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_17"                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_16"                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_15"                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_14"                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_13"                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_12"                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_11"                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_10"                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_9"                                                                                                                                                             ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_8"                                                                                                                                                             ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_7"                                                                                                                                                             ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_6"                                                                                                                                                             ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_5"                                                                                                                                                             ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_4"                                                                                                                                                             ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4|fft:comb_3"                                                                                                                                                             ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; t         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; t[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisor:comb_4"                                                                                                   ;
++------+---------+------------------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type    ; Severity         ; Details                                                                                                  ;
++------+---------+------------------+----------------------------------------------------------------------------------------------------------+
+; f8   ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                                                   ;
+; q2   ; Output  ; Warning          ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+---------+------------------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Fri May 19 15:39:43 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pbl2final -c pbl2final
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file principal.v
+    Info (12023): Found entity 1: principal File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file reguniversal.v
+    Info (12023): Found entity 1: reguniversal File: C:/Users/luigu/Documents/PBL2FINAL/reguniversal.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux4x1.v
+    Info (12023): Found entity 1: mux4x1 File: C:/Users/luigu/Documents/PBL2FINAL/mux4x1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux8x1.v
+    Info (12023): Found entity 1: mux8x1 File: C:/Users/luigu/Documents/PBL2FINAL/mux8x1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file divisor.v
+    Info (12023): Found entity 1: divisor File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fft.v
+    Info (12023): Found entity 1: fft File: C:/Users/luigu/Documents/PBL2FINAL/fft.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ffd.v
+    Info (12023): Found entity 1: ffd File: C:/Users/luigu/Documents/PBL2FINAL/ffd.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file contador.v
+    Info (12023): Found entity 1: contador File: C:/Users/luigu/Documents/PBL2FINAL/contador.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file demux.v
+    Info (12023): Found entity 1: demux File: C:/Users/luigu/Documents/PBL2FINAL/demux.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at mux4x1.v(6): created implicit net for "nb0" File: C:/Users/luigu/Documents/PBL2FINAL/mux4x1.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at mux4x1.v(7): created implicit net for "nb1" File: C:/Users/luigu/Documents/PBL2FINAL/mux4x1.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at mux8x1.v(8): created implicit net for "nb0" File: C:/Users/luigu/Documents/PBL2FINAL/mux8x1.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at mux8x1.v(9): created implicit net for "nb1" File: C:/Users/luigu/Documents/PBL2FINAL/mux8x1.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at mux8x1.v(10): created implicit net for "nb2" File: C:/Users/luigu/Documents/PBL2FINAL/mux8x1.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at contador.v(7): created implicit net for "nq1" File: C:/Users/luigu/Documents/PBL2FINAL/contador.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at demux.v(5): created implicit net for "nb0" File: C:/Users/luigu/Documents/PBL2FINAL/demux.v Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at demux.v(6): created implicit net for "nb1" File: C:/Users/luigu/Documents/PBL2FINAL/demux.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at demux.v(7): created implicit net for "nb2" File: C:/Users/luigu/Documents/PBL2FINAL/demux.v Line: 7
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(10): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 10
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(11): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 11
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(12): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 12
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(13): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 13
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(14): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 14
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(15): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 15
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(16): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 16
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(17): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 17
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(18): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 18
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(19): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 19
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(20): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 20
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(21): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 21
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(22): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 22
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(23): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 23
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(24): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 24
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(25): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 25
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(26): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 26
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(27): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 27
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(28): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 28
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(29): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 29
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(30): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 30
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(31): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 31
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(32): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 32
+Critical Warning (10846): Verilog HDL Instantiation warning at divisor.v(33): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 33
+Critical Warning (10846): Verilog HDL Instantiation warning at principal.v(10): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 10
+Critical Warning (10846): Verilog HDL Instantiation warning at principal.v(12): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 12
+Critical Warning (10846): Verilog HDL Instantiation warning at principal.v(14): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 14
+Critical Warning (10846): Verilog HDL Instantiation warning at principal.v(17): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 17
+Critical Warning (10846): Verilog HDL Instantiation warning at principal.v(19): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 19
+Critical Warning (10846): Verilog HDL Instantiation warning at principal.v(21): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 21
+Critical Warning (10846): Verilog HDL Instantiation warning at principal.v(23): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 23
+Critical Warning (10846): Verilog HDL Instantiation warning at principal.v(25): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 25
+Critical Warning (10846): Verilog HDL Instantiation warning at principal.v(30): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 30
+Critical Warning (10846): Verilog HDL Instantiation warning at principal.v(32): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 32
+Critical Warning (10846): Verilog HDL Instantiation warning at principal.v(34): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 34
+Critical Warning (10846): Verilog HDL Instantiation warning at principal.v(36): instance has no name File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 36
+Info (12127): Elaborating entity "principal" for the top level hierarchy
+Info (12128): Elaborating entity "divisor" for hierarchy "divisor:comb_4" File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 10
+Info (12128): Elaborating entity "fft" for hierarchy "divisor:comb_4|fft:comb_3" File: C:/Users/luigu/Documents/PBL2FINAL/divisor.v Line: 10
+Info (12128): Elaborating entity "contador" for hierarchy "contador:comb_5" File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 12
+Info (12128): Elaborating entity "demux" for hierarchy "demux:comb_6" File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 14
+Info (12128): Elaborating entity "mux8x1" for hierarchy "mux8x1:comb_7" File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 17
+Info (12128): Elaborating entity "reguniversal" for hierarchy "reguniversal:comb_12" File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 30
+Info (12128): Elaborating entity "mux4x1" for hierarchy "reguniversal:comb_12|mux4x1:MUX0" File: C:/Users/luigu/Documents/PBL2FINAL/reguniversal.v Line: 14
+Info (12128): Elaborating entity "ffd" for hierarchy "reguniversal:comb_12|ffd:FF0" File: C:/Users/luigu/Documents/PBL2FINAL/reguniversal.v Line: 32
+Error (12002): Port "f8" does not exist in macrofunction "comb_4" File: C:/Users/luigu/Documents/PBL2FINAL/principal.v Line: 10
+Warning (12241): 30 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 47 warnings
+    Error: Peak virtual memory: 4694 megabytes
+    Error: Processing ended: Fri May 19 15:39:50 2023
+    Error: Elapsed time: 00:00:07
+    Error: Total CPU time (on all processors): 00:00:08
+
+

@@ -1,0 +1,164 @@
+$comment
+	File created using the following command:
+		vcd file pbl2final.msim.vcd -direction
+$end
+$date
+	Wed May 17 08:03:47 2023
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module contador_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var wire 1 " q1 $end
+$var wire 1 # q2 $end
+$var wire 1 $ q3 $end
+
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + clk~combout $end
+$var wire 1 , ff2|q~regout $end
+$var wire 1 - ff3|q~regout $end
+$var wire 1 . ff1|q~regout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+1&
+x'
+1(
+1)
+1*
+0+
+0,
+0-
+0.
+$end
+#40000
+1!
+1+
+1.
+1"
+#80000
+0!
+0+
+#120000
+1!
+1+
+0.
+1,
+0"
+1#
+#160000
+0!
+0+
+#200000
+1!
+1+
+1.
+1"
+#240000
+0!
+0+
+#280000
+1!
+1+
+0.
+1-
+0,
+0"
+1$
+0#
+#320000
+0!
+0+
+#360000
+1!
+1+
+1.
+1"
+#400000
+0!
+0+
+#440000
+1!
+1+
+0.
+1,
+0"
+1#
+#480000
+0!
+0+
+#520000
+1!
+1+
+0-
+0,
+0$
+0#
+#560000
+0!
+0+
+#600000
+1!
+1+
+1.
+1"
+#640000
+0!
+0+
+#680000
+1!
+1+
+0.
+1,
+0"
+1#
+#720000
+0!
+0+
+#760000
+1!
+1+
+1.
+1"
+#800000
+0!
+0+
+#840000
+1!
+1+
+0.
+1-
+0,
+0"
+1$
+0#
+#880000
+0!
+0+
+#920000
+1!
+1+
+1.
+1"
+#960000
+0!
+0+
+#1000000

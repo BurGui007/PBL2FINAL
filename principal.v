@@ -1,0 +1,45 @@
+module principal(c1,c2,c3,c4,c5,l1,l2,l3,l4,l5,l6,l7,clk,ala1,ala2);
+
+	input clk,ala1,ala2; //entrada do clock e da seleçao do usuario
+	output l1,l2,l3,l4,l5,l6,l7,c1,c2,c3,c4,c5; //saidas dos mux e do demux para matriz de leds
+	wire b1,b2,b3,q,q2,on_off; // fios para a contadora, para o divisor de fequencia e para desligar a matriz
+	wire [3:0] e0,e1,e2,e3,e4,e5,e6; //fios que interligam os registradores e as entradas do mux
+	
+	or(on_off,ala1,ala2); // logica para apagar a matriz quando as chaves ala1 e ala2 tiverem abaixadas
+	
+	divisor(clk,q,q2);// chamada do divisor de frequencia pegando os clocks da multiplexaçao e de deslocamento
+	
+	contador (.clk(q),.q1(b1),.q2(b2),.q3(b3));//chamada da contadora
+	
+	demux(.En(on_off),.b0(b1),.b1(b2),.b2(b3),.e0(l1),.e1(l2),.e2(l3),.e3(l4),.e4(l5),.e5(l6),.e6(l7)); // chamda do demux para liberar as linha
+																																		 // da matriz
+																																	
+	mux8x1(b1,b2,b3,c1,e0[0],e1[0],e2[0],e3[0],e4[0],e5[0],e6[0]); // Mux que vai liberar 1 bit na coluna 1 a cada pulso de clock
+	
+	mux8x1(b1,b2,b3,c2,e0[1],e1[1],e2[1],e3[1],e4[1],e5[1],e6[1]); // Mux que vai liberar 1 bit na coluna 2 a cada pulso de clock
+	
+	mux8x1(b1,b2,b3,c3,e0[0],e1[0],e2[0],e3[0],e4[0],e5[0],e6[0]); // Mux que vai liberar 1 bit na coluna 3 a cada pulso de clock
+	
+	mux8x1(b1,b2,b3,c4,e0[2],e1[2],e2[2],e3[2],e4[2],e5[2],e6[2]); // Mux que vai liberar 1 bit na coluna 4 a cada pulso de clock
+	
+	mux8x1(b1,b2,b3,c5,e0[3],e1[3],e2[3],e3[3],e4[3],e5[3],e6[3]); // Mux que vai liberar 1 bit na coluna 5 a cada pulso de clock
+
+	
+	//registrador universal onde passamos o clock de deslocamento, as entradas de seleçao do mux, os fios de entrada do mux e os bits
+	//de que compoem a palavra uefs, como a linha 1 e 3 sao identicas so chamamos o registrador 4 vezes 
+	reguniversal (q2,ala1,ala2,e0[0],e1[0],e2[0],e3[0],e4[0],e5[0],e6[0],1,0,1,0,1,1,1,0,1,1,1,0,1,1,1,0 ); //linha 1 e 3
+	
+	reguniversal (q2,ala1,ala2,e0[1],e1[1],e2[1],e3[1],e4[1],e5[1],e6[1],1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0); //linha 2
+	
+	reguniversal (q2,ala1,ala2,e0[2],e1[2],e2[2],e3[2],e4[2],e5[2],e6[2],1,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0); //linha 4
+	
+	reguniversal (q2,ala1,ala2,e0[3],e1[3],e2[3],e3[3],e4[3],e5[3],e6[3],1,1,1,0,1,1,1,0,1,0,0,0,1,1,1,0); //linha 5
+
+	
+endmodule 
+
+/* 1	0	1	0	1	1	1	0	1	1	1	0	1	1	1	0 linha 1 e 3
+	1	0	1	0	1	0	0	0	1	0	0	0	1	0	0	0 linha 2                    combinaçoes dos bits 
+	1	0	1	0	1	1	1	0	1	1	1	0	1	1	1	0 linha 1 e 3
+	1	0	1	0	1	0	0	0	1	0	0	0	0	0	1	0 linha 4
+	1	1	1	0	1	1	1	0	1	0	0	0	1	1	1	0 linha 5*/

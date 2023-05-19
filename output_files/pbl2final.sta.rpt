@@ -1,0 +1,1492 @@
+Timing Analyzer report for pbl2final
+Wed May 17 07:52:03 2023
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'divisor:comb_4|fft:comb_11|q'
+ 12. Setup: 'divisor:comb_4|fft:comb_26|q'
+ 13. Setup: 'divisor:comb_4|fft:comb_21|q'
+ 14. Setup: 'divisor:comb_4|fft:comb_6|q'
+ 15. Setup: 'divisor:comb_4|fft:comb_12|q'
+ 16. Setup: 'divisor:comb_4|fft:comb_23|q'
+ 17. Setup: 'divisor:comb_4|fft:comb_3|q'
+ 18. Setup: 'divisor:comb_4|fft:comb_14|q'
+ 19. Setup: 'divisor:comb_4|fft:comb_16|q'
+ 20. Setup: 'divisor:comb_4|fft:comb_18|q'
+ 21. Setup: 'divisor:comb_4|fft:comb_10|q'
+ 22. Setup: 'divisor:comb_4|fft:comb_25|q'
+ 23. Setup: 'divisor:comb_4|fft:comb_8|q'
+ 24. Setup: 'divisor:comb_4|fft:comb_7|q'
+ 25. Setup: 'divisor:comb_4|fft:comb_13|q'
+ 26. Setup: 'divisor:comb_4|fft:comb_9|q'
+ 27. Setup: 'divisor:comb_4|fft:comb_17|q'
+ 28. Setup: 'divisor:comb_4|fft:comb_24|q'
+ 29. Setup: 'divisor:comb_4|fft:comb_22|q'
+ 30. Setup: 'divisor:comb_4|fft:comb_19|q'
+ 31. Setup: 'divisor:comb_4|fft:comb_20|q'
+ 32. Setup: 'divisor:comb_4|fft:comb_4|q'
+ 33. Setup: 'divisor:comb_4|fft:comb_5|q'
+ 34. Setup: 'divisor:comb_4|fft:comb_15|q'
+ 35. Setup: 'clk'
+ 36. Hold: 'divisor:comb_4|fft:comb_11|q'
+ 37. Hold: 'clk'
+ 38. Hold: 'divisor:comb_4|fft:comb_15|q'
+ 39. Hold: 'divisor:comb_4|fft:comb_19|q'
+ 40. Hold: 'divisor:comb_4|fft:comb_22|q'
+ 41. Hold: 'divisor:comb_4|fft:comb_5|q'
+ 42. Hold: 'divisor:comb_4|fft:comb_4|q'
+ 43. Hold: 'divisor:comb_4|fft:comb_20|q'
+ 44. Hold: 'divisor:comb_4|fft:comb_21|q'
+ 45. Hold: 'divisor:comb_4|fft:comb_7|q'
+ 46. Hold: 'divisor:comb_4|fft:comb_13|q'
+ 47. Hold: 'divisor:comb_4|fft:comb_9|q'
+ 48. Hold: 'divisor:comb_4|fft:comb_24|q'
+ 49. Hold: 'divisor:comb_4|fft:comb_8|q'
+ 50. Hold: 'divisor:comb_4|fft:comb_12|q'
+ 51. Hold: 'divisor:comb_4|fft:comb_17|q'
+ 52. Hold: 'divisor:comb_4|fft:comb_14|q'
+ 53. Hold: 'divisor:comb_4|fft:comb_18|q'
+ 54. Hold: 'divisor:comb_4|fft:comb_3|q'
+ 55. Hold: 'divisor:comb_4|fft:comb_10|q'
+ 56. Hold: 'divisor:comb_4|fft:comb_25|q'
+ 57. Hold: 'divisor:comb_4|fft:comb_16|q'
+ 58. Hold: 'divisor:comb_4|fft:comb_23|q'
+ 59. Hold: 'divisor:comb_4|fft:comb_6|q'
+ 60. Hold: 'divisor:comb_4|fft:comb_26|q'
+ 61. Setup Transfers
+ 62. Hold Transfers
+ 63. Report TCCS
+ 64. Report RSKM
+ 65. Unconstrained Paths Summary
+ 66. Clock Status Summary
+ 67. Unconstrained Input Ports
+ 68. Unconstrained Output Ports
+ 69. Unconstrained Input Ports
+ 70. Unconstrained Output Ports
+ 71. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; pbl2final                                           ;
+; Device Family         ; MAX II                                              ;
+; Device Name           ; EPM240T100C5                                        ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Slow Model                                          ;
+; Rise/Fall Delays      ; Unavailable                                         ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                     ;
++------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------+
+; Clock Name                   ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                          ;
++------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------+
+; clk                          ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }                          ;
+; divisor:comb_4|fft:comb_3|q  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_3|q }  ;
+; divisor:comb_4|fft:comb_4|q  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_4|q }  ;
+; divisor:comb_4|fft:comb_5|q  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_5|q }  ;
+; divisor:comb_4|fft:comb_6|q  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_6|q }  ;
+; divisor:comb_4|fft:comb_7|q  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_7|q }  ;
+; divisor:comb_4|fft:comb_8|q  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_8|q }  ;
+; divisor:comb_4|fft:comb_9|q  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_9|q }  ;
+; divisor:comb_4|fft:comb_10|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_10|q } ;
+; divisor:comb_4|fft:comb_11|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_11|q } ;
+; divisor:comb_4|fft:comb_12|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_12|q } ;
+; divisor:comb_4|fft:comb_13|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_13|q } ;
+; divisor:comb_4|fft:comb_14|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_14|q } ;
+; divisor:comb_4|fft:comb_15|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_15|q } ;
+; divisor:comb_4|fft:comb_16|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_16|q } ;
+; divisor:comb_4|fft:comb_17|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_17|q } ;
+; divisor:comb_4|fft:comb_18|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_18|q } ;
+; divisor:comb_4|fft:comb_19|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_19|q } ;
+; divisor:comb_4|fft:comb_20|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_20|q } ;
+; divisor:comb_4|fft:comb_21|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_21|q } ;
+; divisor:comb_4|fft:comb_22|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_22|q } ;
+; divisor:comb_4|fft:comb_23|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_23|q } ;
+; divisor:comb_4|fft:comb_24|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_24|q } ;
+; divisor:comb_4|fft:comb_25|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_25|q } ;
+; divisor:comb_4|fft:comb_26|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor:comb_4|fft:comb_26|q } ;
++------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Fmax Summary                                                                            ;
++--------------+-----------------+------------------------------+-------------------------+
+; Fmax         ; Restricted Fmax ; Clock Name                   ; Note                    ;
++--------------+-----------------+------------------------------+-------------------------+
+; 259.0 MHz    ; 255.1 MHz       ; divisor:comb_4|fft:comb_11|q ; limit due to hold check ;
+; 334.78 MHz   ; 334.78 MHz      ; divisor:comb_4|fft:comb_26|q ;                         ;
+; 1612.9 MHz   ; 1612.9 MHz      ; divisor:comb_4|fft:comb_21|q ;                         ;
+; 8928.57 MHz  ; 1004.02 MHz     ; divisor:comb_4|fft:comb_6|q  ; limit due to hold check ;
+; 9259.26 MHz  ; 1000.0 MHz      ; divisor:comb_4|fft:comb_22|q ; limit due to hold check ;
+; 9259.26 MHz  ; 1000.0 MHz      ; divisor:comb_4|fft:comb_23|q ; limit due to hold check ;
+; 9433.96 MHz  ; 998.0 MHz       ; divisor:comb_4|fft:comb_16|q ; limit due to hold check ;
+; 9615.38 MHz  ; 996.02 MHz      ; divisor:comb_4|fft:comb_10|q ; limit due to hold check ;
+; 9615.38 MHz  ; 996.02 MHz      ; divisor:comb_4|fft:comb_19|q ; limit due to hold check ;
+; 9615.38 MHz  ; 996.02 MHz      ; divisor:comb_4|fft:comb_20|q ; limit due to hold check ;
+; 9615.38 MHz  ; 996.02 MHz      ; divisor:comb_4|fft:comb_25|q ; limit due to hold check ;
+; 9803.92 MHz  ; 994.04 MHz      ; divisor:comb_4|fft:comb_14|q ; limit due to hold check ;
+; 9803.92 MHz  ; 994.04 MHz      ; divisor:comb_4|fft:comb_18|q ; limit due to hold check ;
+; 9803.92 MHz  ; 994.04 MHz      ; divisor:comb_4|fft:comb_3|q  ; limit due to hold check ;
+; 10000.0 MHz  ; 992.06 MHz      ; divisor:comb_4|fft:comb_12|q ; limit due to hold check ;
+; 10000.0 MHz  ; 992.06 MHz      ; divisor:comb_4|fft:comb_17|q ; limit due to hold check ;
+; 10000.0 MHz  ; 992.06 MHz      ; divisor:comb_4|fft:comb_4|q  ; limit due to hold check ;
+; 10000.0 MHz  ; 992.06 MHz      ; divisor:comb_4|fft:comb_5|q  ; limit due to hold check ;
+; 10204.08 MHz ; 990.1 MHz       ; divisor:comb_4|fft:comb_8|q  ; limit due to hold check ;
+; 10416.67 MHz ; 988.14 MHz      ; divisor:comb_4|fft:comb_24|q ; limit due to hold check ;
+; 10638.3 MHz  ; 986.19 MHz      ; divisor:comb_4|fft:comb_13|q ; limit due to hold check ;
+; 10638.3 MHz  ; 986.19 MHz      ; divisor:comb_4|fft:comb_15|q ; limit due to hold check ;
+; 10638.3 MHz  ; 986.19 MHz      ; divisor:comb_4|fft:comb_9|q  ; limit due to hold check ;
+; 10869.57 MHz ; 984.25 MHz      ; divisor:comb_4|fft:comb_7|q  ; limit due to hold check ;
++--------------+-----------------+------------------------------+-------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-------------------------------------------------------+
+; Setup Summary                                         ;
++------------------------------+--------+---------------+
+; Clock                        ; Slack  ; End Point TNS ;
++------------------------------+--------+---------------+
+; divisor:comb_4|fft:comb_11|q ; -2.861 ; -7.574        ;
+; divisor:comb_4|fft:comb_26|q ; -1.987 ; -102.323      ;
+; divisor:comb_4|fft:comb_21|q ; 0.190  ; 0.000         ;
+; divisor:comb_4|fft:comb_6|q  ; 0.207  ; 0.000         ;
+; divisor:comb_4|fft:comb_12|q ; 0.208  ; 0.000         ;
+; divisor:comb_4|fft:comb_23|q ; 0.208  ; 0.000         ;
+; divisor:comb_4|fft:comb_3|q  ; 0.208  ; 0.000         ;
+; divisor:comb_4|fft:comb_14|q ; 0.227  ; 0.000         ;
+; divisor:comb_4|fft:comb_16|q ; 0.227  ; 0.000         ;
+; divisor:comb_4|fft:comb_18|q ; 0.227  ; 0.000         ;
+; divisor:comb_4|fft:comb_10|q ; 0.228  ; 0.000         ;
+; divisor:comb_4|fft:comb_25|q ; 0.228  ; 0.000         ;
+; divisor:comb_4|fft:comb_8|q  ; 0.230  ; 0.000         ;
+; divisor:comb_4|fft:comb_7|q  ; 0.266  ; 0.000         ;
+; divisor:comb_4|fft:comb_13|q ; 0.370  ; 0.000         ;
+; divisor:comb_4|fft:comb_9|q  ; 0.370  ; 0.000         ;
+; divisor:comb_4|fft:comb_17|q ; 0.375  ; 0.000         ;
+; divisor:comb_4|fft:comb_24|q ; 0.382  ; 0.000         ;
+; divisor:comb_4|fft:comb_22|q ; 0.446  ; 0.000         ;
+; divisor:comb_4|fft:comb_19|q ; 0.448  ; 0.000         ;
+; divisor:comb_4|fft:comb_20|q ; 0.448  ; 0.000         ;
+; divisor:comb_4|fft:comb_4|q  ; 0.450  ; 0.000         ;
+; divisor:comb_4|fft:comb_5|q  ; 0.450  ; 0.000         ;
+; divisor:comb_4|fft:comb_15|q ; 0.453  ; 0.000         ;
+; clk                          ; 2.316  ; 0.000         ;
++------------------------------+--------+---------------+
+
+
++-------------------------------------------------------+
+; Hold Summary                                          ;
++------------------------------+--------+---------------+
+; Clock                        ; Slack  ; End Point TNS ;
++------------------------------+--------+---------------+
+; divisor:comb_4|fft:comb_11|q ; -2.889 ; -2.889        ;
+; clk                          ; -2.370 ; -2.370        ;
+; divisor:comb_4|fft:comb_15|q ; -1.285 ; -1.285        ;
+; divisor:comb_4|fft:comb_19|q ; -1.139 ; -1.139        ;
+; divisor:comb_4|fft:comb_22|q ; -0.838 ; -0.838        ;
+; divisor:comb_4|fft:comb_5|q  ; -0.799 ; -0.799        ;
+; divisor:comb_4|fft:comb_4|q  ; -0.650 ; -0.650        ;
+; divisor:comb_4|fft:comb_20|q ; -0.619 ; -0.619        ;
+; divisor:comb_4|fft:comb_21|q ; -0.543 ; -0.543        ;
+; divisor:comb_4|fft:comb_7|q  ; -0.508 ; -0.508        ;
+; divisor:comb_4|fft:comb_13|q ; -0.507 ; -0.507        ;
+; divisor:comb_4|fft:comb_9|q  ; -0.507 ; -0.507        ;
+; divisor:comb_4|fft:comb_24|q ; -0.506 ; -0.506        ;
+; divisor:comb_4|fft:comb_8|q  ; -0.505 ; -0.505        ;
+; divisor:comb_4|fft:comb_12|q ; -0.504 ; -0.504        ;
+; divisor:comb_4|fft:comb_17|q ; -0.504 ; -0.504        ;
+; divisor:comb_4|fft:comb_14|q ; -0.503 ; -0.503        ;
+; divisor:comb_4|fft:comb_18|q ; -0.503 ; -0.503        ;
+; divisor:comb_4|fft:comb_3|q  ; -0.503 ; -0.503        ;
+; divisor:comb_4|fft:comb_10|q ; -0.502 ; -0.502        ;
+; divisor:comb_4|fft:comb_25|q ; -0.502 ; -0.502        ;
+; divisor:comb_4|fft:comb_16|q ; -0.501 ; -0.501        ;
+; divisor:comb_4|fft:comb_23|q ; -0.500 ; -0.500        ;
+; divisor:comb_4|fft:comb_6|q  ; -0.498 ; -0.498        ;
+; divisor:comb_4|fft:comb_26|q ; 1.641  ; 0.000         ;
++------------------------------+--------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++-------------------------------------------------------+
+; Minimum Pulse Width Summary                           ;
++------------------------------+--------+---------------+
+; Clock                        ; Slack  ; End Point TNS ;
++------------------------------+--------+---------------+
+; clk                          ; -2.289 ; -2.289        ;
+; divisor:comb_4|fft:comb_10|q ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_11|q ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_12|q ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_13|q ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_14|q ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_15|q ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_16|q ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_17|q ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_18|q ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_19|q ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_20|q ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_21|q ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_22|q ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_23|q ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_24|q ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_25|q ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_26|q ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_3|q  ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_4|q  ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_5|q  ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_6|q  ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_7|q  ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_8|q  ; 0.234  ; 0.000         ;
+; divisor:comb_4|fft:comb_9|q  ; 0.234  ; 0.000         ;
++------------------------------+--------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_11|q'                                                                                                                                       ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -2.861 ; contador:comb_5|fft:ff2|q    ; contador:comb_5|fft:ff3|q    ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 1.000        ; 0.000      ; 3.528      ;
+; -2.851 ; contador:comb_5|fft:ff1|q    ; contador:comb_5|fft:ff2|q    ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 1.000        ; 0.000      ; 3.518      ;
+; -2.487 ; contador:comb_5|fft:ff3|q    ; contador:comb_5|fft:ff3|q    ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 1.000        ; 0.000      ; 3.154      ;
+; -2.457 ; contador:comb_5|fft:ff2|q    ; contador:comb_5|fft:ff2|q    ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 1.000        ; 0.000      ; 3.124      ;
+; -1.865 ; contador:comb_5|fft:ff1|q    ; contador:comb_5|fft:ff3|q    ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 1.000        ; 0.000      ; 2.532      ;
+; -1.862 ; contador:comb_5|fft:ff1|q    ; contador:comb_5|fft:ff1|q    ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 1.000        ; 0.000      ; 2.529      ;
+; -1.835 ; contador:comb_5|fft:ff2|q    ; contador:comb_5|fft:ff1|q    ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 1.000        ; 0.000      ; 2.502      ;
+; -1.673 ; contador:comb_5|fft:ff3|q    ; contador:comb_5|fft:ff2|q    ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 1.000        ; 0.000      ; 2.340      ;
+; -1.475 ; contador:comb_5|fft:ff3|q    ; contador:comb_5|fft:ff1|q    ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 1.000        ; 0.000      ; 2.142      ;
+; 1.906  ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 0.500        ; 5.012      ; 3.649      ;
+; 2.406  ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 1.000        ; 5.012      ; 3.649      ;
+; 2.835  ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_11|q ; 0.500        ; 5.012      ; 2.720      ;
+; 3.335  ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_11|q ; 1.000        ; 5.012      ; 2.720      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_26|q'                                                                                                                                             ;
++--------+---------------------------------+---------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                       ; To Node                         ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------+---------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -1.987 ; reguniversal:comb_13|ffd:FF6|q  ; reguniversal:comb_13|ffd:FF7|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.654      ;
+; -1.866 ; reguniversal:comb_13|ffd:FF2|q  ; reguniversal:comb_13|ffd:FF3|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.533      ;
+; -1.865 ; reguniversal:comb_13|ffd:FF4|q  ; reguniversal:comb_13|ffd:FF5|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.532      ;
+; -1.846 ; reguniversal:comb_13|ffd:FF3|q  ; reguniversal:comb_13|ffd:FF2|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.513      ;
+; -1.818 ; reguniversal:comb_15|ffd:FF5|q  ; reguniversal:comb_15|ffd:FF6|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.485      ;
+; -1.732 ; reguniversal:comb_13|ffd:FF12|q ; reguniversal:comb_13|ffd:FF13|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.399      ;
+; -1.724 ; reguniversal:comb_14|ffd:FF9|q  ; reguniversal:comb_14|ffd:FF10|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.391      ;
+; -1.720 ; reguniversal:comb_12|ffd:FF10|q ; reguniversal:comb_12|ffd:FF11|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.387      ;
+; -1.719 ; reguniversal:comb_13|ffd:FF3|q  ; reguniversal:comb_13|ffd:FF4|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.386      ;
+; -1.718 ; reguniversal:comb_12|ffd:FF8|q  ; reguniversal:comb_12|ffd:FF9|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.385      ;
+; -1.711 ; reguniversal:comb_14|ffd:FF4|q  ; reguniversal:comb_14|ffd:FF3|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.378      ;
+; -1.708 ; reguniversal:comb_14|ffd:FF7|q  ; reguniversal:comb_14|ffd:FF8|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.375      ;
+; -1.704 ; reguniversal:comb_12|ffd:FF2|q  ; reguniversal:comb_12|ffd:FF1|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.371      ;
+; -1.696 ; reguniversal:comb_15|ffd:FF12|q ; reguniversal:comb_15|ffd:FF13|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.363      ;
+; -1.693 ; reguniversal:comb_15|ffd:FF3|q  ; reguniversal:comb_15|ffd:FF4|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.360      ;
+; -1.693 ; reguniversal:comb_14|ffd:FF12|q ; reguniversal:comb_14|ffd:FF13|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.360      ;
+; -1.692 ; reguniversal:comb_15|ffd:FF10|q ; reguniversal:comb_15|ffd:FF11|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.359      ;
+; -1.653 ; reguniversal:comb_14|ffd:FF0|q  ; reguniversal:comb_14|ffd:FF1|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.320      ;
+; -1.641 ; reguniversal:comb_15|ffd:FF15|q ; reguniversal:comb_15|ffd:FF0|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.308      ;
+; -1.634 ; reguniversal:comb_14|ffd:FF10|q ; reguniversal:comb_14|ffd:FF11|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.301      ;
+; -1.631 ; reguniversal:comb_14|ffd:FF13|q ; reguniversal:comb_14|ffd:FF12|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.298      ;
+; -1.624 ; reguniversal:comb_14|ffd:FF15|q ; reguniversal:comb_14|ffd:FF0|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.291      ;
+; -1.619 ; reguniversal:comb_13|ffd:FF7|q  ; reguniversal:comb_13|ffd:FF6|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.286      ;
+; -1.618 ; reguniversal:comb_15|ffd:FF6|q  ; reguniversal:comb_15|ffd:FF7|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.285      ;
+; -1.618 ; reguniversal:comb_15|ffd:FF0|q  ; reguniversal:comb_15|ffd:FF15|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.285      ;
+; -1.617 ; reguniversal:comb_15|ffd:FF11|q ; reguniversal:comb_15|ffd:FF12|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.284      ;
+; -1.614 ; reguniversal:comb_14|ffd:FF0|q  ; reguniversal:comb_14|ffd:FF15|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.281      ;
+; -1.612 ; reguniversal:comb_13|ffd:FF8|q  ; reguniversal:comb_13|ffd:FF7|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.279      ;
+; -1.607 ; reguniversal:comb_13|ffd:FF10|q ; reguniversal:comb_13|ffd:FF9|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.274      ;
+; -1.601 ; reguniversal:comb_13|ffd:FF1|q  ; reguniversal:comb_13|ffd:FF2|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.268      ;
+; -1.601 ; reguniversal:comb_15|ffd:FF14|q ; reguniversal:comb_15|ffd:FF13|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.268      ;
+; -1.600 ; reguniversal:comb_12|ffd:FF11|q ; reguniversal:comb_12|ffd:FF12|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.267      ;
+; -1.590 ; reguniversal:comb_13|ffd:FF4|q  ; reguniversal:comb_13|ffd:FF3|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.257      ;
+; -1.590 ; reguniversal:comb_15|ffd:FF13|q ; reguniversal:comb_15|ffd:FF14|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.257      ;
+; -1.590 ; reguniversal:comb_14|ffd:FF11|q ; reguniversal:comb_14|ffd:FF10|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.257      ;
+; -1.590 ; reguniversal:comb_12|ffd:FF12|q ; reguniversal:comb_12|ffd:FF11|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.257      ;
+; -1.588 ; reguniversal:comb_14|ffd:FF3|q  ; reguniversal:comb_14|ffd:FF4|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.255      ;
+; -1.586 ; reguniversal:comb_13|ffd:FF2|q  ; reguniversal:comb_13|ffd:FF1|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.253      ;
+; -1.584 ; reguniversal:comb_15|ffd:FF7|q  ; reguniversal:comb_15|ffd:FF6|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.251      ;
+; -1.582 ; reguniversal:comb_13|ffd:FF9|q  ; reguniversal:comb_13|ffd:FF10|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.249      ;
+; -1.573 ; reguniversal:comb_13|ffd:FF7|q  ; reguniversal:comb_13|ffd:FF8|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.240      ;
+; -1.572 ; reguniversal:comb_15|ffd:FF12|q ; reguniversal:comb_15|ffd:FF11|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.239      ;
+; -1.568 ; reguniversal:comb_12|ffd:FF1|q  ; reguniversal:comb_12|ffd:FF2|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.235      ;
+; -1.564 ; reguniversal:comb_15|ffd:FF9|q  ; reguniversal:comb_15|ffd:FF8|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.231      ;
+; -1.548 ; reguniversal:comb_15|ffd:FF9|q  ; reguniversal:comb_15|ffd:FF10|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.215      ;
+; -1.517 ; reguniversal:comb_14|ffd:FF1|q  ; reguniversal:comb_14|ffd:FF0|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.184      ;
+; -1.513 ; reguniversal:comb_14|ffd:FF12|q ; reguniversal:comb_14|ffd:FF11|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.180      ;
+; -1.513 ; reguniversal:comb_13|ffd:FF11|q ; reguniversal:comb_13|ffd:FF12|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.180      ;
+; -1.511 ; reguniversal:comb_14|ffd:FF2|q  ; reguniversal:comb_14|ffd:FF3|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.178      ;
+; -1.511 ; reguniversal:comb_13|ffd:FF15|q ; reguniversal:comb_13|ffd:FF0|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.178      ;
+; -1.509 ; reguniversal:comb_12|ffd:FF6|q  ; reguniversal:comb_12|ffd:FF7|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.176      ;
+; -1.509 ; reguniversal:comb_15|ffd:FF8|q  ; reguniversal:comb_15|ffd:FF9|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.176      ;
+; -1.509 ; reguniversal:comb_13|ffd:FF15|q ; reguniversal:comb_13|ffd:FF14|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.176      ;
+; -1.508 ; reguniversal:comb_13|ffd:FF5|q  ; reguniversal:comb_13|ffd:FF4|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.175      ;
+; -1.508 ; reguniversal:comb_15|ffd:FF15|q ; reguniversal:comb_15|ffd:FF14|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.175      ;
+; -1.508 ; reguniversal:comb_13|ffd:FF11|q ; reguniversal:comb_13|ffd:FF10|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.175      ;
+; -1.507 ; reguniversal:comb_12|ffd:FF6|q  ; reguniversal:comb_12|ffd:FF5|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.174      ;
+; -1.507 ; reguniversal:comb_15|ffd:FF8|q  ; reguniversal:comb_15|ffd:FF7|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.174      ;
+; -1.507 ; reguniversal:comb_14|ffd:FF2|q  ; reguniversal:comb_14|ffd:FF1|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.174      ;
+; -1.506 ; reguniversal:comb_14|ffd:FF14|q ; reguniversal:comb_14|ffd:FF13|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.173      ;
+; -1.505 ; reguniversal:comb_14|ffd:FF1|q  ; reguniversal:comb_14|ffd:FF2|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.172      ;
+; -1.504 ; reguniversal:comb_15|ffd:FF1|q  ; reguniversal:comb_15|ffd:FF0|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.171      ;
+; -1.503 ; reguniversal:comb_15|ffd:FF4|q  ; reguniversal:comb_15|ffd:FF3|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.170      ;
+; -1.503 ; reguniversal:comb_13|ffd:FF5|q  ; reguniversal:comb_13|ffd:FF6|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.170      ;
+; -1.502 ; reguniversal:comb_12|ffd:FF3|q  ; reguniversal:comb_12|ffd:FF4|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.169      ;
+; -1.502 ; reguniversal:comb_13|ffd:FF0|q  ; reguniversal:comb_13|ffd:FF15|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.169      ;
+; -1.501 ; reguniversal:comb_15|ffd:FF4|q  ; reguniversal:comb_15|ffd:FF5|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.168      ;
+; -1.501 ; reguniversal:comb_14|ffd:FF14|q ; reguniversal:comb_14|ffd:FF15|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.168      ;
+; -1.501 ; reguniversal:comb_12|ffd:FF13|q ; reguniversal:comb_12|ffd:FF12|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.168      ;
+; -1.500 ; reguniversal:comb_15|ffd:FF1|q  ; reguniversal:comb_15|ffd:FF2|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.167      ;
+; -1.500 ; reguniversal:comb_12|ffd:FF3|q  ; reguniversal:comb_12|ffd:FF2|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.167      ;
+; -1.499 ; reguniversal:comb_13|ffd:FF8|q  ; reguniversal:comb_13|ffd:FF9|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.166      ;
+; -1.499 ; reguniversal:comb_12|ffd:FF13|q ; reguniversal:comb_12|ffd:FF14|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.166      ;
+; -1.499 ; reguniversal:comb_12|ffd:FF12|q ; reguniversal:comb_12|ffd:FF13|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.166      ;
+; -1.495 ; reguniversal:comb_15|ffd:FF14|q ; reguniversal:comb_15|ffd:FF15|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.162      ;
+; -1.495 ; reguniversal:comb_14|ffd:FF13|q ; reguniversal:comb_14|ffd:FF14|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.162      ;
+; -1.493 ; reguniversal:comb_12|ffd:FF7|q  ; reguniversal:comb_12|ffd:FF6|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.160      ;
+; -1.493 ; reguniversal:comb_12|ffd:FF11|q ; reguniversal:comb_12|ffd:FF10|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.160      ;
+; -1.491 ; reguniversal:comb_13|ffd:FF10|q ; reguniversal:comb_13|ffd:FF11|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.158      ;
+; -1.490 ; reguniversal:comb_15|ffd:FF13|q ; reguniversal:comb_15|ffd:FF12|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.157      ;
+; -1.490 ; reguniversal:comb_14|ffd:FF8|q  ; reguniversal:comb_14|ffd:FF9|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.157      ;
+; -1.489 ; reguniversal:comb_13|ffd:FF0|q  ; reguniversal:comb_13|ffd:FF1|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.156      ;
+; -1.489 ; reguniversal:comb_12|ffd:FF0|q  ; reguniversal:comb_12|ffd:FF1|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.156      ;
+; -1.486 ; reguniversal:comb_14|ffd:FF11|q ; reguniversal:comb_14|ffd:FF12|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.153      ;
+; -1.486 ; reguniversal:comb_12|ffd:FF0|q  ; reguniversal:comb_12|ffd:FF15|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.153      ;
+; -1.485 ; reguniversal:comb_14|ffd:FF5|q  ; reguniversal:comb_14|ffd:FF6|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.152      ;
+; -1.483 ; reguniversal:comb_14|ffd:FF5|q  ; reguniversal:comb_14|ffd:FF4|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.150      ;
+; -1.483 ; reguniversal:comb_12|ffd:FF7|q  ; reguniversal:comb_12|ffd:FF8|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.150      ;
+; -1.482 ; reguniversal:comb_14|ffd:FF8|q  ; reguniversal:comb_14|ffd:FF7|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.149      ;
+; -1.477 ; reguniversal:comb_12|ffd:FF1|q  ; reguniversal:comb_12|ffd:FF0|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.144      ;
+; -1.473 ; reguniversal:comb_12|ffd:FF2|q  ; reguniversal:comb_12|ffd:FF3|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.140      ;
+; -1.472 ; reguniversal:comb_14|ffd:FF4|q  ; reguniversal:comb_14|ffd:FF5|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.139      ;
+; -1.471 ; reguniversal:comb_13|ffd:FF9|q  ; reguniversal:comb_13|ffd:FF8|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.138      ;
+; -1.467 ; reguniversal:comb_15|ffd:FF0|q  ; reguniversal:comb_15|ffd:FF1|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.134      ;
+; -1.338 ; reguniversal:comb_12|ffd:FF5|q  ; reguniversal:comb_12|ffd:FF6|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.005      ;
+; -1.336 ; reguniversal:comb_12|ffd:FF5|q  ; reguniversal:comb_12|ffd:FF4|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.003      ;
+; -1.334 ; reguniversal:comb_12|ffd:FF4|q  ; reguniversal:comb_12|ffd:FF5|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 2.001      ;
+; -1.330 ; reguniversal:comb_12|ffd:FF4|q  ; reguniversal:comb_12|ffd:FF3|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 1.997      ;
+; -1.294 ; reguniversal:comb_13|ffd:FF13|q ; reguniversal:comb_13|ffd:FF12|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 1.961      ;
+; -1.290 ; reguniversal:comb_13|ffd:FF13|q ; reguniversal:comb_13|ffd:FF14|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 1.000        ; 0.000      ; 1.957      ;
++--------+---------------------------------+---------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_21|q'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 0.190 ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_21|q ; 0.500        ; 1.807      ; 2.160      ;
+; 0.489 ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_21|q ; 0.500        ; 1.807      ; 1.861      ;
+; 0.690 ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_21|q ; 1.000        ; 1.807      ; 2.160      ;
+; 0.989 ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_21|q ; 1.000        ; 1.807      ; 1.861      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_6|q'                                                                                                                                   ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; 0.207 ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_6|q ; 0.500        ; 1.784      ; 2.120      ;
+; 0.444 ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_6|q ; 0.500        ; 1.784      ; 1.883      ;
+; 0.707 ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_6|q ; 1.000        ; 1.784      ; 2.120      ;
+; 0.944 ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_6|q ; 1.000        ; 1.784      ; 1.883      ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_12|q'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 0.208 ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_12|q ; 0.500        ; 1.785      ; 2.120      ;
+; 0.450 ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_12|q ; 0.500        ; 1.785      ; 1.878      ;
+; 0.708 ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_12|q ; 1.000        ; 1.785      ; 2.120      ;
+; 0.950 ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_12|q ; 1.000        ; 1.785      ; 1.878      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_23|q'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 0.208 ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_23|q ; 0.500        ; 1.784      ; 2.119      ;
+; 0.446 ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_23|q ; 0.500        ; 1.784      ; 1.881      ;
+; 0.708 ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_23|q ; 1.000        ; 1.784      ; 2.119      ;
+; 0.946 ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_23|q ; 1.000        ; 1.784      ; 1.881      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_3|q'                                                                                                                                   ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; 0.208 ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_3|q ; 0.500        ; 1.785      ; 2.120      ;
+; 0.449 ; divisor:comb_4|fft:comb_3|q ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_3|q ; divisor:comb_4|fft:comb_3|q ; 0.500        ; 1.785      ; 1.879      ;
+; 0.708 ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_3|q ; 1.000        ; 1.785      ; 2.120      ;
+; 0.949 ; divisor:comb_4|fft:comb_3|q ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_3|q ; divisor:comb_4|fft:comb_3|q ; 1.000        ; 1.785      ; 1.879      ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_14|q'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 0.227 ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_14|q ; 0.500        ; 1.804      ; 2.120      ;
+; 0.449 ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_14|q ; 0.500        ; 1.804      ; 1.898      ;
+; 0.727 ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_14|q ; 1.000        ; 1.804      ; 2.120      ;
+; 0.949 ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_14|q ; 1.000        ; 1.804      ; 1.898      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_16|q'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 0.227 ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_16|q ; 0.500        ; 1.804      ; 2.120      ;
+; 0.447 ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_16|q ; 0.500        ; 1.804      ; 1.900      ;
+; 0.727 ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_16|q ; 1.000        ; 1.804      ; 2.120      ;
+; 0.947 ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_16|q ; 1.000        ; 1.804      ; 1.900      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_18|q'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 0.227 ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_18|q ; 0.500        ; 1.804      ; 2.120      ;
+; 0.449 ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_18|q ; 0.500        ; 1.804      ; 1.898      ;
+; 0.727 ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_18|q ; 1.000        ; 1.804      ; 2.120      ;
+; 0.949 ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_18|q ; 1.000        ; 1.804      ; 1.898      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_10|q'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 0.228 ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_10|q ; 0.500        ; 1.804      ; 2.119      ;
+; 0.448 ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_10|q ; 0.500        ; 1.804      ; 1.899      ;
+; 0.728 ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_10|q ; 1.000        ; 1.804      ; 2.119      ;
+; 0.948 ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_10|q ; 1.000        ; 1.804      ; 1.899      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_25|q'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 0.228 ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_25|q ; 0.500        ; 1.804      ; 2.119      ;
+; 0.448 ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_25|q ; 0.500        ; 1.804      ; 1.899      ;
+; 0.728 ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_25|q ; 1.000        ; 1.804      ; 2.119      ;
+; 0.948 ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_25|q ; 1.000        ; 1.804      ; 1.899      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_8|q'                                                                                                                                   ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; 0.230 ; divisor:comb_4|fft:comb_9|q ; divisor:comb_4|fft:comb_9|q ; divisor:comb_4|fft:comb_9|q ; divisor:comb_4|fft:comb_8|q ; 0.500        ; 1.807      ; 2.120      ;
+; 0.451 ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_9|q ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_8|q ; 0.500        ; 1.807      ; 1.899      ;
+; 0.730 ; divisor:comb_4|fft:comb_9|q ; divisor:comb_4|fft:comb_9|q ; divisor:comb_4|fft:comb_9|q ; divisor:comb_4|fft:comb_8|q ; 1.000        ; 1.807      ; 2.120      ;
+; 0.951 ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_9|q ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_8|q ; 1.000        ; 1.807      ; 1.899      ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_7|q'                                                                                                                                   ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; 0.266 ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_7|q ; 0.500        ; 2.193      ; 2.470      ;
+; 0.454 ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_7|q ; 0.500        ; 2.193      ; 2.282      ;
+; 0.766 ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_7|q ; 1.000        ; 2.193      ; 2.470      ;
+; 0.954 ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_7|q ; 1.000        ; 2.193      ; 2.282      ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_13|q'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 0.370 ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_13|q ; 0.500        ; 2.193      ; 2.366      ;
+; 0.453 ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_13|q ; 0.500        ; 2.193      ; 2.283      ;
+; 0.870 ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_13|q ; 1.000        ; 2.193      ; 2.366      ;
+; 0.953 ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_13|q ; 1.000        ; 2.193      ; 2.283      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_9|q'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+-----------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+-----------------------------+--------------+------------+------------+
+; 0.370 ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_9|q ; 0.500        ; 2.193      ; 2.366      ;
+; 0.453 ; divisor:comb_4|fft:comb_9|q  ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_9|q  ; divisor:comb_4|fft:comb_9|q ; 0.500        ; 2.193      ; 2.283      ;
+; 0.870 ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_9|q ; 1.000        ; 2.193      ; 2.366      ;
+; 0.953 ; divisor:comb_4|fft:comb_9|q  ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_9|q  ; divisor:comb_4|fft:comb_9|q ; 1.000        ; 2.193      ; 2.283      ;
++-------+------------------------------+------------------------------+------------------------------+-----------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_17|q'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 0.375 ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_17|q ; 0.500        ; 2.198      ; 2.366      ;
+; 0.450 ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_17|q ; 0.500        ; 2.198      ; 2.291      ;
+; 0.875 ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_17|q ; 1.000        ; 2.198      ; 2.366      ;
+; 0.950 ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_17|q ; 1.000        ; 2.198      ; 2.291      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_24|q'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 0.382 ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_24|q ; 0.500        ; 2.205      ; 2.366      ;
+; 0.452 ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_24|q ; 0.500        ; 2.205      ; 2.296      ;
+; 0.882 ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_24|q ; 1.000        ; 2.205      ; 2.366      ;
+; 0.952 ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_24|q ; 1.000        ; 2.205      ; 2.296      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_22|q'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 0.446 ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_22|q ; 0.500        ; 2.732      ; 2.829      ;
+; 0.784 ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_22|q ; 0.500        ; 2.732      ; 2.491      ;
+; 0.946 ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_22|q ; 1.000        ; 2.732      ; 2.829      ;
+; 1.284 ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_22|q ; 1.000        ; 2.732      ; 2.491      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_19|q'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 0.448 ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_19|q ; 0.500        ; 2.870      ; 2.965      ;
+; 0.948 ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_19|q ; 1.000        ; 2.870      ; 2.965      ;
+; 1.085 ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_19|q ; 0.500        ; 2.870      ; 2.328      ;
+; 1.585 ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_19|q ; 1.000        ; 2.870      ; 2.328      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_20|q'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 0.448 ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_20|q ; 0.500        ; 2.178      ; 2.273      ;
+; 0.565 ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_20|q ; 0.500        ; 2.178      ; 2.156      ;
+; 0.948 ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_20|q ; 1.000        ; 2.178      ; 2.273      ;
+; 1.065 ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_20|q ; 1.000        ; 2.178      ; 2.156      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_4|q'                                                                                                                                   ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; 0.450 ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_4|q ; 0.500        ; 2.172      ; 2.265      ;
+; 0.596 ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_4|q ; 0.500        ; 2.172      ; 2.119      ;
+; 0.950 ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_4|q ; 1.000        ; 2.172      ; 2.265      ;
+; 1.096 ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_4|q ; 1.000        ; 2.172      ; 2.119      ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_5|q'                                                                                                                                   ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; 0.450 ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_5|q ; 0.500        ; 2.715      ; 2.808      ;
+; 0.745 ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_5|q ; 0.500        ; 2.715      ; 2.513      ;
+; 0.950 ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_5|q ; 1.000        ; 2.715      ; 2.808      ;
+; 1.245 ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_5|q ; 1.000        ; 2.715      ; 2.513      ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'divisor:comb_4|fft:comb_15|q'                                                                                                                                      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 0.453 ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_15|q ; 0.500        ; 3.054      ; 3.144      ;
+; 0.953 ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_15|q ; 1.000        ; 3.054      ; 3.144      ;
+; 1.231 ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_15|q ; 0.500        ; 3.054      ; 2.366      ;
+; 1.731 ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_15|q ; 1.000        ; 3.054      ; 2.366      ;
++-------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk'                                                                                                                                           ;
++-------+-----------------------------+-----------------------------+-----------------------------+-------------+--------------+------------+------------+
+; Slack ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------+-----------------------------+-----------------------------+-------------+--------------+------------+------------+
+; 2.316 ; divisor:comb_4|fft:comb_3|q ; divisor:comb_4|fft:comb_3|q ; divisor:comb_4|fft:comb_3|q ; clk         ; 0.500        ; 4.286      ; 2.513      ;
+; 2.816 ; divisor:comb_4|fft:comb_3|q ; divisor:comb_4|fft:comb_3|q ; divisor:comb_4|fft:comb_3|q ; clk         ; 1.000        ; 4.286      ; 2.513      ;
++-------+-----------------------------+-----------------------------+-----------------------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_11|q'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -2.889 ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_11|q ; 0.000        ; 5.012      ; 2.720      ;
+; -2.389 ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_11|q ; -0.500       ; 5.012      ; 2.720      ;
+; -1.960 ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 0.000        ; 5.012      ; 3.649      ;
+; -1.460 ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; -0.500       ; 5.012      ; 3.649      ;
+; 1.921  ; contador:comb_5|fft:ff3|q    ; contador:comb_5|fft:ff1|q    ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 0.000        ; 0.000      ; 2.142      ;
+; 2.119  ; contador:comb_5|fft:ff3|q    ; contador:comb_5|fft:ff2|q    ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 0.000        ; 0.000      ; 2.340      ;
+; 2.281  ; contador:comb_5|fft:ff2|q    ; contador:comb_5|fft:ff1|q    ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 0.000        ; 0.000      ; 2.502      ;
+; 2.308  ; contador:comb_5|fft:ff1|q    ; contador:comb_5|fft:ff1|q    ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 0.000        ; 0.000      ; 2.529      ;
+; 2.311  ; contador:comb_5|fft:ff1|q    ; contador:comb_5|fft:ff3|q    ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 0.000        ; 0.000      ; 2.532      ;
+; 2.379  ; contador:comb_5|fft:ff2|q    ; contador:comb_5|fft:ff2|q    ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 0.000        ; 0.000      ; 2.600      ;
+; 2.783  ; contador:comb_5|fft:ff2|q    ; contador:comb_5|fft:ff3|q    ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 0.000        ; 0.000      ; 3.004      ;
+; 2.933  ; contador:comb_5|fft:ff3|q    ; contador:comb_5|fft:ff3|q    ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 0.000        ; 0.000      ; 3.154      ;
+; 3.297  ; contador:comb_5|fft:ff1|q    ; contador:comb_5|fft:ff2|q    ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 0.000        ; 0.000      ; 3.518      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk'                                                                                                                                             ;
++--------+-----------------------------+-----------------------------+-----------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------+-----------------------------+-----------------------------+-------------+--------------+------------+------------+
+; -2.370 ; divisor:comb_4|fft:comb_3|q ; divisor:comb_4|fft:comb_3|q ; divisor:comb_4|fft:comb_3|q ; clk         ; 0.000        ; 4.286      ; 2.513      ;
+; -1.870 ; divisor:comb_4|fft:comb_3|q ; divisor:comb_4|fft:comb_3|q ; divisor:comb_4|fft:comb_3|q ; clk         ; -0.500       ; 4.286      ; 2.513      ;
++--------+-----------------------------+-----------------------------+-----------------------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_15|q'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -1.285 ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_15|q ; 0.000        ; 3.054      ; 2.366      ;
+; -0.785 ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_15|q ; -0.500       ; 3.054      ; 2.366      ;
+; -0.507 ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_15|q ; 0.000        ; 3.054      ; 3.144      ;
+; -0.007 ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_15|q ; -0.500       ; 3.054      ; 3.144      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_19|q'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -1.139 ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_19|q ; 0.000        ; 2.870      ; 2.328      ;
+; -0.639 ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_19|q ; -0.500       ; 2.870      ; 2.328      ;
+; -0.502 ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_19|q ; 0.000        ; 2.870      ; 2.965      ;
+; -0.002 ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_19|q ; -0.500       ; 2.870      ; 2.965      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_22|q'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -0.838 ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_22|q ; 0.000        ; 2.732      ; 2.491      ;
+; -0.500 ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_22|q ; 0.000        ; 2.732      ; 2.829      ;
+; -0.338 ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_22|q ; -0.500       ; 2.732      ; 2.491      ;
+; 0.000  ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_22|q ; -0.500       ; 2.732      ; 2.829      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_5|q'                                                                                                                                     ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack  ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; -0.799 ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_5|q ; 0.000        ; 2.715      ; 2.513      ;
+; -0.504 ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_5|q ; 0.000        ; 2.715      ; 2.808      ;
+; -0.299 ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_5|q ; -0.500       ; 2.715      ; 2.513      ;
+; -0.004 ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_5|q ; -0.500       ; 2.715      ; 2.808      ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_4|q'                                                                                                                                     ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack  ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; -0.650 ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_4|q ; 0.000        ; 2.172      ; 2.119      ;
+; -0.504 ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_4|q ; 0.000        ; 2.172      ; 2.265      ;
+; -0.150 ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_4|q ; -0.500       ; 2.172      ; 2.119      ;
+; -0.004 ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_5|q ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_4|q ; -0.500       ; 2.172      ; 2.265      ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_20|q'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -0.619 ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_20|q ; 0.000        ; 2.178      ; 2.156      ;
+; -0.502 ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_20|q ; 0.000        ; 2.178      ; 2.273      ;
+; -0.119 ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_20|q ; -0.500       ; 2.178      ; 2.156      ;
+; -0.002 ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_20|q ; -0.500       ; 2.178      ; 2.273      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_21|q'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -0.543 ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_21|q ; 0.000        ; 1.807      ; 1.861      ;
+; -0.244 ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_21|q ; 0.000        ; 1.807      ; 2.160      ;
+; -0.043 ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_21|q ; -0.500       ; 1.807      ; 1.861      ;
+; 0.256  ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_21|q ; -0.500       ; 1.807      ; 2.160      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_7|q'                                                                                                                                     ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack  ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; -0.508 ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_7|q ; 0.000        ; 2.193      ; 2.282      ;
+; -0.320 ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_7|q ; 0.000        ; 2.193      ; 2.470      ;
+; -0.008 ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_7|q ; -0.500       ; 2.193      ; 2.282      ;
+; 0.180  ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_7|q ; -0.500       ; 2.193      ; 2.470      ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_13|q'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -0.507 ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_13|q ; 0.000        ; 2.193      ; 2.283      ;
+; -0.424 ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_13|q ; 0.000        ; 2.193      ; 2.366      ;
+; -0.007 ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_13|q ; -0.500       ; 2.193      ; 2.283      ;
+; 0.076  ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_13|q ; -0.500       ; 2.193      ; 2.366      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_9|q'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+-----------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+-----------------------------+--------------+------------+------------+
+; -0.507 ; divisor:comb_4|fft:comb_9|q  ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_9|q  ; divisor:comb_4|fft:comb_9|q ; 0.000        ; 2.193      ; 2.283      ;
+; -0.424 ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_9|q ; 0.000        ; 2.193      ; 2.366      ;
+; -0.007 ; divisor:comb_4|fft:comb_9|q  ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_9|q  ; divisor:comb_4|fft:comb_9|q ; -0.500       ; 2.193      ; 2.283      ;
+; 0.076  ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_9|q ; -0.500       ; 2.193      ; 2.366      ;
++--------+------------------------------+------------------------------+------------------------------+-----------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_24|q'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -0.506 ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_24|q ; 0.000        ; 2.205      ; 2.296      ;
+; -0.436 ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_24|q ; 0.000        ; 2.205      ; 2.366      ;
+; -0.006 ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_24|q ; -0.500       ; 2.205      ; 2.296      ;
+; 0.064  ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_24|q ; -0.500       ; 2.205      ; 2.366      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_8|q'                                                                                                                                     ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack  ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; -0.505 ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_9|q ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_8|q ; 0.000        ; 1.807      ; 1.899      ;
+; -0.284 ; divisor:comb_4|fft:comb_9|q ; divisor:comb_4|fft:comb_9|q ; divisor:comb_4|fft:comb_9|q ; divisor:comb_4|fft:comb_8|q ; 0.000        ; 1.807      ; 2.120      ;
+; -0.005 ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_9|q ; divisor:comb_4|fft:comb_8|q ; divisor:comb_4|fft:comb_8|q ; -0.500       ; 1.807      ; 1.899      ;
+; 0.216  ; divisor:comb_4|fft:comb_9|q ; divisor:comb_4|fft:comb_9|q ; divisor:comb_4|fft:comb_9|q ; divisor:comb_4|fft:comb_8|q ; -0.500       ; 1.807      ; 2.120      ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_12|q'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -0.504 ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_12|q ; 0.000        ; 1.785      ; 1.878      ;
+; -0.262 ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_12|q ; 0.000        ; 1.785      ; 2.120      ;
+; -0.004 ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_12|q ; -0.500       ; 1.785      ; 1.878      ;
+; 0.238  ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_12|q ; -0.500       ; 1.785      ; 2.120      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_17|q'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -0.504 ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_17|q ; 0.000        ; 2.198      ; 2.291      ;
+; -0.429 ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_17|q ; 0.000        ; 2.198      ; 2.366      ;
+; -0.004 ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_17|q ; -0.500       ; 2.198      ; 2.291      ;
+; 0.071  ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_17|q ; -0.500       ; 2.198      ; 2.366      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_14|q'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -0.503 ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_14|q ; 0.000        ; 1.804      ; 1.898      ;
+; -0.281 ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_14|q ; 0.000        ; 1.804      ; 2.120      ;
+; -0.003 ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_14|q ; -0.500       ; 1.804      ; 1.898      ;
+; 0.219  ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_14|q ; -0.500       ; 1.804      ; 2.120      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_18|q'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -0.503 ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_18|q ; 0.000        ; 1.804      ; 1.898      ;
+; -0.281 ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_18|q ; 0.000        ; 1.804      ; 2.120      ;
+; -0.003 ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_18|q ; -0.500       ; 1.804      ; 1.898      ;
+; 0.219  ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_18|q ; -0.500       ; 1.804      ; 2.120      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_3|q'                                                                                                                                     ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack  ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; -0.503 ; divisor:comb_4|fft:comb_3|q ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_3|q ; divisor:comb_4|fft:comb_3|q ; 0.000        ; 1.785      ; 1.879      ;
+; -0.262 ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_3|q ; 0.000        ; 1.785      ; 2.120      ;
+; -0.003 ; divisor:comb_4|fft:comb_3|q ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_3|q ; divisor:comb_4|fft:comb_3|q ; -0.500       ; 1.785      ; 1.879      ;
+; 0.238  ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_4|q ; divisor:comb_4|fft:comb_3|q ; -0.500       ; 1.785      ; 2.120      ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_10|q'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -0.502 ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_10|q ; 0.000        ; 1.804      ; 1.899      ;
+; -0.282 ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_10|q ; 0.000        ; 1.804      ; 2.119      ;
+; -0.002 ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_10|q ; -0.500       ; 1.804      ; 1.899      ;
+; 0.218  ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_10|q ; -0.500       ; 1.804      ; 2.119      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_25|q'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -0.502 ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_25|q ; 0.000        ; 1.804      ; 1.899      ;
+; -0.282 ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_25|q ; 0.000        ; 1.804      ; 2.119      ;
+; -0.002 ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_25|q ; -0.500       ; 1.804      ; 1.899      ;
+; 0.218  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_25|q ; -0.500       ; 1.804      ; 2.119      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_16|q'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -0.501 ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_16|q ; 0.000        ; 1.804      ; 1.900      ;
+; -0.281 ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_16|q ; 0.000        ; 1.804      ; 2.120      ;
+; -0.001 ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_16|q ; -0.500       ; 1.804      ; 1.900      ;
+; 0.219  ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_16|q ; -0.500       ; 1.804      ; 2.120      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_23|q'                                                                                                                                        ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; -0.500 ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_23|q ; 0.000        ; 1.784      ; 1.881      ;
+; -0.262 ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_23|q ; 0.000        ; 1.784      ; 2.119      ;
+; 0.000  ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_23|q ; -0.500       ; 1.784      ; 1.881      ;
+; 0.238  ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_23|q ; -0.500       ; 1.784      ; 2.119      ;
++--------+------------------------------+------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_6|q'                                                                                                                                     ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack  ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; -0.498 ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_6|q ; 0.000        ; 1.784      ; 1.883      ;
+; -0.261 ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_6|q ; 0.000        ; 1.784      ; 2.120      ;
+; 0.002  ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_6|q ; divisor:comb_4|fft:comb_6|q ; -0.500       ; 1.784      ; 1.883      ;
+; 0.239  ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_7|q ; divisor:comb_4|fft:comb_6|q ; -0.500       ; 1.784      ; 2.120      ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'divisor:comb_4|fft:comb_26|q'                                                                                                                                             ;
++-------+---------------------------------+---------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; Slack ; From Node                       ; To Node                         ; Launch Clock                 ; Latch Clock                  ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------+---------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+; 1.641 ; reguniversal:comb_14|ffd:FF15|q ; reguniversal:comb_14|ffd:FF14|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.862      ;
+; 1.644 ; reguniversal:comb_15|ffd:FF7|q  ; reguniversal:comb_15|ffd:FF8|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.865      ;
+; 1.660 ; reguniversal:comb_15|ffd:FF11|q ; reguniversal:comb_15|ffd:FF10|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.881      ;
+; 1.662 ; reguniversal:comb_13|ffd:FF6|q  ; reguniversal:comb_13|ffd:FF5|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.883      ;
+; 1.665 ; reguniversal:comb_15|ffd:FF6|q  ; reguniversal:comb_15|ffd:FF5|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.886      ;
+; 1.670 ; reguniversal:comb_15|ffd:FF10|q ; reguniversal:comb_15|ffd:FF9|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.891      ;
+; 1.671 ; reguniversal:comb_15|ffd:FF3|q  ; reguniversal:comb_15|ffd:FF2|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.892      ;
+; 1.678 ; reguniversal:comb_14|ffd:FF6|q  ; reguniversal:comb_14|ffd:FF5|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.899      ;
+; 1.682 ; reguniversal:comb_14|ffd:FF10|q ; reguniversal:comb_14|ffd:FF9|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.903      ;
+; 1.683 ; reguniversal:comb_13|ffd:FF1|q  ; reguniversal:comb_13|ffd:FF0|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.904      ;
+; 1.684 ; reguniversal:comb_14|ffd:FF6|q  ; reguniversal:comb_14|ffd:FF7|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.905      ;
+; 1.687 ; reguniversal:comb_15|ffd:FF5|q  ; reguniversal:comb_15|ffd:FF4|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.908      ;
+; 1.687 ; reguniversal:comb_15|ffd:FF2|q  ; reguniversal:comb_15|ffd:FF1|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.908      ;
+; 1.689 ; reguniversal:comb_12|ffd:FF15|q ; reguniversal:comb_12|ffd:FF0|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.910      ;
+; 1.690 ; reguniversal:comb_15|ffd:FF2|q  ; reguniversal:comb_15|ffd:FF3|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.911      ;
+; 1.691 ; reguniversal:comb_12|ffd:FF15|q ; reguniversal:comb_12|ffd:FF14|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.912      ;
+; 1.692 ; reguniversal:comb_14|ffd:FF7|q  ; reguniversal:comb_14|ffd:FF6|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.913      ;
+; 1.695 ; reguniversal:comb_12|ffd:FF8|q  ; reguniversal:comb_12|ffd:FF7|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.916      ;
+; 1.695 ; reguniversal:comb_12|ffd:FF9|q  ; reguniversal:comb_12|ffd:FF8|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.916      ;
+; 1.695 ; reguniversal:comb_13|ffd:FF14|q ; reguniversal:comb_13|ffd:FF13|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.916      ;
+; 1.700 ; reguniversal:comb_12|ffd:FF10|q ; reguniversal:comb_12|ffd:FF9|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.921      ;
+; 1.701 ; reguniversal:comb_12|ffd:FF14|q ; reguniversal:comb_12|ffd:FF15|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.922      ;
+; 1.702 ; reguniversal:comb_12|ffd:FF9|q  ; reguniversal:comb_12|ffd:FF10|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.923      ;
+; 1.703 ; reguniversal:comb_14|ffd:FF9|q  ; reguniversal:comb_14|ffd:FF8|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.924      ;
+; 1.703 ; reguniversal:comb_12|ffd:FF14|q ; reguniversal:comb_12|ffd:FF13|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.924      ;
+; 1.704 ; reguniversal:comb_13|ffd:FF14|q ; reguniversal:comb_13|ffd:FF15|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.925      ;
+; 1.704 ; reguniversal:comb_13|ffd:FF12|q ; reguniversal:comb_13|ffd:FF11|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.925      ;
+; 1.706 ; reguniversal:comb_14|ffd:FF3|q  ; reguniversal:comb_14|ffd:FF2|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.927      ;
+; 1.736 ; reguniversal:comb_13|ffd:FF13|q ; reguniversal:comb_13|ffd:FF14|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.957      ;
+; 1.740 ; reguniversal:comb_13|ffd:FF13|q ; reguniversal:comb_13|ffd:FF12|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.961      ;
+; 1.776 ; reguniversal:comb_12|ffd:FF4|q  ; reguniversal:comb_12|ffd:FF3|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 1.997      ;
+; 1.780 ; reguniversal:comb_12|ffd:FF4|q  ; reguniversal:comb_12|ffd:FF5|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.001      ;
+; 1.782 ; reguniversal:comb_12|ffd:FF5|q  ; reguniversal:comb_12|ffd:FF4|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.003      ;
+; 1.784 ; reguniversal:comb_12|ffd:FF5|q  ; reguniversal:comb_12|ffd:FF6|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.005      ;
+; 1.913 ; reguniversal:comb_15|ffd:FF0|q  ; reguniversal:comb_15|ffd:FF1|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.134      ;
+; 1.917 ; reguniversal:comb_13|ffd:FF9|q  ; reguniversal:comb_13|ffd:FF8|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.138      ;
+; 1.918 ; reguniversal:comb_14|ffd:FF4|q  ; reguniversal:comb_14|ffd:FF5|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.139      ;
+; 1.919 ; reguniversal:comb_12|ffd:FF2|q  ; reguniversal:comb_12|ffd:FF3|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.140      ;
+; 1.923 ; reguniversal:comb_12|ffd:FF1|q  ; reguniversal:comb_12|ffd:FF0|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.144      ;
+; 1.928 ; reguniversal:comb_14|ffd:FF8|q  ; reguniversal:comb_14|ffd:FF7|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.149      ;
+; 1.929 ; reguniversal:comb_14|ffd:FF5|q  ; reguniversal:comb_14|ffd:FF4|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.150      ;
+; 1.929 ; reguniversal:comb_12|ffd:FF7|q  ; reguniversal:comb_12|ffd:FF8|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.150      ;
+; 1.931 ; reguniversal:comb_14|ffd:FF5|q  ; reguniversal:comb_14|ffd:FF6|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.152      ;
+; 1.932 ; reguniversal:comb_14|ffd:FF11|q ; reguniversal:comb_14|ffd:FF12|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.153      ;
+; 1.932 ; reguniversal:comb_12|ffd:FF0|q  ; reguniversal:comb_12|ffd:FF15|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.153      ;
+; 1.935 ; reguniversal:comb_13|ffd:FF0|q  ; reguniversal:comb_13|ffd:FF1|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.156      ;
+; 1.935 ; reguniversal:comb_12|ffd:FF0|q  ; reguniversal:comb_12|ffd:FF1|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.156      ;
+; 1.936 ; reguniversal:comb_15|ffd:FF13|q ; reguniversal:comb_15|ffd:FF12|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.157      ;
+; 1.936 ; reguniversal:comb_14|ffd:FF8|q  ; reguniversal:comb_14|ffd:FF9|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.157      ;
+; 1.937 ; reguniversal:comb_13|ffd:FF10|q ; reguniversal:comb_13|ffd:FF11|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.158      ;
+; 1.939 ; reguniversal:comb_12|ffd:FF7|q  ; reguniversal:comb_12|ffd:FF6|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.160      ;
+; 1.939 ; reguniversal:comb_12|ffd:FF11|q ; reguniversal:comb_12|ffd:FF10|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.160      ;
+; 1.941 ; reguniversal:comb_15|ffd:FF14|q ; reguniversal:comb_15|ffd:FF15|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.162      ;
+; 1.941 ; reguniversal:comb_14|ffd:FF13|q ; reguniversal:comb_14|ffd:FF14|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.162      ;
+; 1.945 ; reguniversal:comb_13|ffd:FF8|q  ; reguniversal:comb_13|ffd:FF9|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.166      ;
+; 1.945 ; reguniversal:comb_12|ffd:FF13|q ; reguniversal:comb_12|ffd:FF14|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.166      ;
+; 1.945 ; reguniversal:comb_12|ffd:FF12|q ; reguniversal:comb_12|ffd:FF13|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.166      ;
+; 1.946 ; reguniversal:comb_15|ffd:FF1|q  ; reguniversal:comb_15|ffd:FF2|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.167      ;
+; 1.946 ; reguniversal:comb_12|ffd:FF3|q  ; reguniversal:comb_12|ffd:FF2|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.167      ;
+; 1.947 ; reguniversal:comb_15|ffd:FF4|q  ; reguniversal:comb_15|ffd:FF5|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.168      ;
+; 1.947 ; reguniversal:comb_14|ffd:FF14|q ; reguniversal:comb_14|ffd:FF15|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.168      ;
+; 1.947 ; reguniversal:comb_12|ffd:FF13|q ; reguniversal:comb_12|ffd:FF12|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.168      ;
+; 1.948 ; reguniversal:comb_12|ffd:FF3|q  ; reguniversal:comb_12|ffd:FF4|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.169      ;
+; 1.948 ; reguniversal:comb_13|ffd:FF0|q  ; reguniversal:comb_13|ffd:FF15|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.169      ;
+; 1.949 ; reguniversal:comb_15|ffd:FF4|q  ; reguniversal:comb_15|ffd:FF3|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.170      ;
+; 1.949 ; reguniversal:comb_13|ffd:FF5|q  ; reguniversal:comb_13|ffd:FF6|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.170      ;
+; 1.950 ; reguniversal:comb_15|ffd:FF1|q  ; reguniversal:comb_15|ffd:FF0|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.171      ;
+; 1.951 ; reguniversal:comb_14|ffd:FF1|q  ; reguniversal:comb_14|ffd:FF2|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.172      ;
+; 1.952 ; reguniversal:comb_14|ffd:FF14|q ; reguniversal:comb_14|ffd:FF13|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.173      ;
+; 1.953 ; reguniversal:comb_12|ffd:FF6|q  ; reguniversal:comb_12|ffd:FF5|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.174      ;
+; 1.953 ; reguniversal:comb_15|ffd:FF8|q  ; reguniversal:comb_15|ffd:FF7|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.174      ;
+; 1.953 ; reguniversal:comb_14|ffd:FF2|q  ; reguniversal:comb_14|ffd:FF1|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.174      ;
+; 1.954 ; reguniversal:comb_13|ffd:FF5|q  ; reguniversal:comb_13|ffd:FF4|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.175      ;
+; 1.954 ; reguniversal:comb_15|ffd:FF15|q ; reguniversal:comb_15|ffd:FF14|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.175      ;
+; 1.954 ; reguniversal:comb_13|ffd:FF11|q ; reguniversal:comb_13|ffd:FF10|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.175      ;
+; 1.955 ; reguniversal:comb_12|ffd:FF6|q  ; reguniversal:comb_12|ffd:FF7|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.176      ;
+; 1.955 ; reguniversal:comb_15|ffd:FF8|q  ; reguniversal:comb_15|ffd:FF9|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.176      ;
+; 1.955 ; reguniversal:comb_13|ffd:FF15|q ; reguniversal:comb_13|ffd:FF14|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.176      ;
+; 1.957 ; reguniversal:comb_14|ffd:FF2|q  ; reguniversal:comb_14|ffd:FF3|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.178      ;
+; 1.957 ; reguniversal:comb_13|ffd:FF15|q ; reguniversal:comb_13|ffd:FF0|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.178      ;
+; 1.959 ; reguniversal:comb_14|ffd:FF12|q ; reguniversal:comb_14|ffd:FF11|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.180      ;
+; 1.959 ; reguniversal:comb_13|ffd:FF11|q ; reguniversal:comb_13|ffd:FF12|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.180      ;
+; 1.963 ; reguniversal:comb_14|ffd:FF1|q  ; reguniversal:comb_14|ffd:FF0|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.184      ;
+; 1.994 ; reguniversal:comb_15|ffd:FF9|q  ; reguniversal:comb_15|ffd:FF10|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.215      ;
+; 2.010 ; reguniversal:comb_15|ffd:FF9|q  ; reguniversal:comb_15|ffd:FF8|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.231      ;
+; 2.014 ; reguniversal:comb_12|ffd:FF1|q  ; reguniversal:comb_12|ffd:FF2|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.235      ;
+; 2.018 ; reguniversal:comb_15|ffd:FF12|q ; reguniversal:comb_15|ffd:FF11|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.239      ;
+; 2.019 ; reguniversal:comb_13|ffd:FF7|q  ; reguniversal:comb_13|ffd:FF8|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.240      ;
+; 2.028 ; reguniversal:comb_13|ffd:FF9|q  ; reguniversal:comb_13|ffd:FF10|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.249      ;
+; 2.030 ; reguniversal:comb_15|ffd:FF7|q  ; reguniversal:comb_15|ffd:FF6|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.251      ;
+; 2.032 ; reguniversal:comb_13|ffd:FF2|q  ; reguniversal:comb_13|ffd:FF1|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.253      ;
+; 2.034 ; reguniversal:comb_14|ffd:FF3|q  ; reguniversal:comb_14|ffd:FF4|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.255      ;
+; 2.036 ; reguniversal:comb_13|ffd:FF4|q  ; reguniversal:comb_13|ffd:FF3|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.257      ;
+; 2.036 ; reguniversal:comb_15|ffd:FF13|q ; reguniversal:comb_15|ffd:FF14|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.257      ;
+; 2.036 ; reguniversal:comb_14|ffd:FF11|q ; reguniversal:comb_14|ffd:FF10|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.257      ;
+; 2.036 ; reguniversal:comb_12|ffd:FF12|q ; reguniversal:comb_12|ffd:FF11|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.257      ;
+; 2.046 ; reguniversal:comb_12|ffd:FF11|q ; reguniversal:comb_12|ffd:FF12|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.267      ;
+; 2.047 ; reguniversal:comb_13|ffd:FF1|q  ; reguniversal:comb_13|ffd:FF2|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.268      ;
+; 2.047 ; reguniversal:comb_15|ffd:FF14|q ; reguniversal:comb_15|ffd:FF13|q ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.268      ;
+; 2.053 ; reguniversal:comb_13|ffd:FF10|q ; reguniversal:comb_13|ffd:FF9|q  ; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 0.000        ; 0.000      ; 2.274      ;
++-------+---------------------------------+---------------------------------+------------------------------+------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                         ;
++------------------------------+------------------------------+----------+----------+----------+----------+
+; From Clock                   ; To Clock                     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------------------+------------------------------+----------+----------+----------+----------+
+; divisor:comb_4|fft:comb_3|q  ; clk                          ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_3|q  ; divisor:comb_4|fft:comb_3|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_4|q  ; divisor:comb_4|fft:comb_3|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_4|q  ; divisor:comb_4|fft:comb_4|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_5|q  ; divisor:comb_4|fft:comb_4|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_5|q  ; divisor:comb_4|fft:comb_5|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_6|q  ; divisor:comb_4|fft:comb_5|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_6|q  ; divisor:comb_4|fft:comb_6|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_7|q  ; divisor:comb_4|fft:comb_6|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_7|q  ; divisor:comb_4|fft:comb_7|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_8|q  ; divisor:comb_4|fft:comb_7|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_8|q  ; divisor:comb_4|fft:comb_8|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_9|q  ; divisor:comb_4|fft:comb_8|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_9|q  ; divisor:comb_4|fft:comb_9|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_9|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_10|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_10|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 12       ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_11|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_12|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_12|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_13|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_13|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_14|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_14|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_15|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_15|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_16|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_16|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_17|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_17|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_18|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_18|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_19|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_19|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_20|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_20|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_21|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_21|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_22|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_22|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_23|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_23|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_24|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_24|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_25|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_25|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 128      ; 0        ; 0        ; 0        ;
++------------------------------+------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                          ;
++------------------------------+------------------------------+----------+----------+----------+----------+
+; From Clock                   ; To Clock                     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------------------+------------------------------+----------+----------+----------+----------+
+; divisor:comb_4|fft:comb_3|q  ; clk                          ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_3|q  ; divisor:comb_4|fft:comb_3|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_4|q  ; divisor:comb_4|fft:comb_3|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_4|q  ; divisor:comb_4|fft:comb_4|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_5|q  ; divisor:comb_4|fft:comb_4|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_5|q  ; divisor:comb_4|fft:comb_5|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_6|q  ; divisor:comb_4|fft:comb_5|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_6|q  ; divisor:comb_4|fft:comb_6|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_7|q  ; divisor:comb_4|fft:comb_6|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_7|q  ; divisor:comb_4|fft:comb_7|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_8|q  ; divisor:comb_4|fft:comb_7|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_8|q  ; divisor:comb_4|fft:comb_8|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_9|q  ; divisor:comb_4|fft:comb_8|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_9|q  ; divisor:comb_4|fft:comb_9|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_9|q  ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_10|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_10|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; 12       ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_11|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_12|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_12|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_13|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_13|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_14|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_14|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_15|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_15|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_16|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_16|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_17|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_17|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_18|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_18|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_19|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_19|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_20|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_20|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_21|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_21|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_22|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_22|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_23|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_23|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_24|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_24|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_25|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_25|q ; 1        ; 1        ; 0        ; 0        ;
+; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; 128      ; 0        ; 0        ; 0        ;
++------------------------------+------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 142   ; 142  ;
+; Unconstrained Output Ports      ; 12    ; 12   ;
+; Unconstrained Output Port Paths ; 85    ; 85   ;
++---------------------------------+-------+------+
+
+
++----------------------------------------------------------------------------------+
+; Clock Status Summary                                                             ;
++------------------------------+------------------------------+------+-------------+
+; Target                       ; Clock                        ; Type ; Status      ;
++------------------------------+------------------------------+------+-------------+
+; clk                          ; clk                          ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_3|q  ; divisor:comb_4|fft:comb_3|q  ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_4|q  ; divisor:comb_4|fft:comb_4|q  ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_5|q  ; divisor:comb_4|fft:comb_5|q  ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_6|q  ; divisor:comb_4|fft:comb_6|q  ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_7|q  ; divisor:comb_4|fft:comb_7|q  ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_8|q  ; divisor:comb_4|fft:comb_8|q  ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_9|q  ; divisor:comb_4|fft:comb_9|q  ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_10|q ; divisor:comb_4|fft:comb_10|q ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_11|q ; divisor:comb_4|fft:comb_11|q ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_12|q ; divisor:comb_4|fft:comb_12|q ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_13|q ; divisor:comb_4|fft:comb_13|q ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_14|q ; divisor:comb_4|fft:comb_14|q ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_15|q ; divisor:comb_4|fft:comb_15|q ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_16|q ; divisor:comb_4|fft:comb_16|q ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_17|q ; divisor:comb_4|fft:comb_17|q ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_18|q ; divisor:comb_4|fft:comb_18|q ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_19|q ; divisor:comb_4|fft:comb_19|q ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_20|q ; divisor:comb_4|fft:comb_20|q ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_21|q ; divisor:comb_4|fft:comb_21|q ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_22|q ; divisor:comb_4|fft:comb_22|q ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_23|q ; divisor:comb_4|fft:comb_23|q ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_24|q ; divisor:comb_4|fft:comb_24|q ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_25|q ; divisor:comb_4|fft:comb_25|q ; Base ; Constrained ;
+; divisor:comb_4|fft:comb_26|q ; divisor:comb_4|fft:comb_26|q ; Base ; Constrained ;
++------------------------------+------------------------------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; ala1       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ala2       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; c1          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; c2          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; c3          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; c4          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; c5          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; l1          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; l2          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; l3          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; l4          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; l5          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; l6          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; l7          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; ala1       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ala2       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; c1          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; c2          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; c3          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; c4          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; c5          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; l1          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; l2          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; l3          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; l4          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; l5          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; l6          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; l7          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Wed May 17 07:52:02 2023
+Info: Command: quartus_sta pbl2final -c pbl2final
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'pbl2final.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_26|q divisor:comb_4|fft:comb_26|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_25|q divisor:comb_4|fft:comb_25|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_24|q divisor:comb_4|fft:comb_24|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_23|q divisor:comb_4|fft:comb_23|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_22|q divisor:comb_4|fft:comb_22|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_21|q divisor:comb_4|fft:comb_21|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_20|q divisor:comb_4|fft:comb_20|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_19|q divisor:comb_4|fft:comb_19|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_18|q divisor:comb_4|fft:comb_18|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_17|q divisor:comb_4|fft:comb_17|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_16|q divisor:comb_4|fft:comb_16|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_15|q divisor:comb_4|fft:comb_15|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_14|q divisor:comb_4|fft:comb_14|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_13|q divisor:comb_4|fft:comb_13|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_12|q divisor:comb_4|fft:comb_12|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_11|q divisor:comb_4|fft:comb_11|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_10|q divisor:comb_4|fft:comb_10|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_9|q divisor:comb_4|fft:comb_9|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_8|q divisor:comb_4|fft:comb_8|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_7|q divisor:comb_4|fft:comb_7|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_6|q divisor:comb_4|fft:comb_6|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_5|q divisor:comb_4|fft:comb_5|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_4|q divisor:comb_4|fft:comb_4|q
+    Info (332105): create_clock -period 1.000 -name divisor:comb_4|fft:comb_3|q divisor:comb_4|fft:comb_3|q
+    Info (332105): create_clock -period 1.000 -name clk clk
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -2.861
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.861              -7.574 divisor:comb_4|fft:comb_11|q 
+    Info (332119):    -1.987            -102.323 divisor:comb_4|fft:comb_26|q 
+    Info (332119):     0.190               0.000 divisor:comb_4|fft:comb_21|q 
+    Info (332119):     0.207               0.000 divisor:comb_4|fft:comb_6|q 
+    Info (332119):     0.208               0.000 divisor:comb_4|fft:comb_12|q 
+    Info (332119):     0.208               0.000 divisor:comb_4|fft:comb_23|q 
+    Info (332119):     0.208               0.000 divisor:comb_4|fft:comb_3|q 
+    Info (332119):     0.227               0.000 divisor:comb_4|fft:comb_14|q 
+    Info (332119):     0.227               0.000 divisor:comb_4|fft:comb_16|q 
+    Info (332119):     0.227               0.000 divisor:comb_4|fft:comb_18|q 
+    Info (332119):     0.228               0.000 divisor:comb_4|fft:comb_10|q 
+    Info (332119):     0.228               0.000 divisor:comb_4|fft:comb_25|q 
+    Info (332119):     0.230               0.000 divisor:comb_4|fft:comb_8|q 
+    Info (332119):     0.266               0.000 divisor:comb_4|fft:comb_7|q 
+    Info (332119):     0.370               0.000 divisor:comb_4|fft:comb_13|q 
+    Info (332119):     0.370               0.000 divisor:comb_4|fft:comb_9|q 
+    Info (332119):     0.375               0.000 divisor:comb_4|fft:comb_17|q 
+    Info (332119):     0.382               0.000 divisor:comb_4|fft:comb_24|q 
+    Info (332119):     0.446               0.000 divisor:comb_4|fft:comb_22|q 
+    Info (332119):     0.448               0.000 divisor:comb_4|fft:comb_19|q 
+    Info (332119):     0.448               0.000 divisor:comb_4|fft:comb_20|q 
+    Info (332119):     0.450               0.000 divisor:comb_4|fft:comb_4|q 
+    Info (332119):     0.450               0.000 divisor:comb_4|fft:comb_5|q 
+    Info (332119):     0.453               0.000 divisor:comb_4|fft:comb_15|q 
+    Info (332119):     2.316               0.000 clk 
+Info (332146): Worst-case hold slack is -2.889
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.889              -2.889 divisor:comb_4|fft:comb_11|q 
+    Info (332119):    -2.370              -2.370 clk 
+    Info (332119):    -1.285              -1.285 divisor:comb_4|fft:comb_15|q 
+    Info (332119):    -1.139              -1.139 divisor:comb_4|fft:comb_19|q 
+    Info (332119):    -0.838              -0.838 divisor:comb_4|fft:comb_22|q 
+    Info (332119):    -0.799              -0.799 divisor:comb_4|fft:comb_5|q 
+    Info (332119):    -0.650              -0.650 divisor:comb_4|fft:comb_4|q 
+    Info (332119):    -0.619              -0.619 divisor:comb_4|fft:comb_20|q 
+    Info (332119):    -0.543              -0.543 divisor:comb_4|fft:comb_21|q 
+    Info (332119):    -0.508              -0.508 divisor:comb_4|fft:comb_7|q 
+    Info (332119):    -0.507              -0.507 divisor:comb_4|fft:comb_13|q 
+    Info (332119):    -0.507              -0.507 divisor:comb_4|fft:comb_9|q 
+    Info (332119):    -0.506              -0.506 divisor:comb_4|fft:comb_24|q 
+    Info (332119):    -0.505              -0.505 divisor:comb_4|fft:comb_8|q 
+    Info (332119):    -0.504              -0.504 divisor:comb_4|fft:comb_12|q 
+    Info (332119):    -0.504              -0.504 divisor:comb_4|fft:comb_17|q 
+    Info (332119):    -0.503              -0.503 divisor:comb_4|fft:comb_14|q 
+    Info (332119):    -0.503              -0.503 divisor:comb_4|fft:comb_18|q 
+    Info (332119):    -0.503              -0.503 divisor:comb_4|fft:comb_3|q 
+    Info (332119):    -0.502              -0.502 divisor:comb_4|fft:comb_10|q 
+    Info (332119):    -0.502              -0.502 divisor:comb_4|fft:comb_25|q 
+    Info (332119):    -0.501              -0.501 divisor:comb_4|fft:comb_16|q 
+    Info (332119):    -0.500              -0.500 divisor:comb_4|fft:comb_23|q 
+    Info (332119):    -0.498              -0.498 divisor:comb_4|fft:comb_6|q 
+    Info (332119):     1.641               0.000 divisor:comb_4|fft:comb_26|q 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 clk 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_10|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_11|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_12|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_13|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_14|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_15|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_16|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_17|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_18|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_19|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_20|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_21|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_22|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_23|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_24|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_25|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_26|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_3|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_4|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_5|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_6|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_7|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_8|q 
+    Info (332119):     0.234               0.000 divisor:comb_4|fft:comb_9|q 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4713 megabytes
+    Info: Processing ended: Wed May 17 07:52:03 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

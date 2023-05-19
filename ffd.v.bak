@@ -1,0 +1,10 @@
+module ffd(d,ck,q);
+	
+	input d,ck; //  
+	output reg q; //
+	
+	always @(posedge ck) begin
+		q <= d; 
+	end 
+	
+endmodule 

@@ -1,0 +1,13 @@
+module contador (clk, q1,q2,q3);
+	
+	input clk;
+	output q1,q2,q3;
+	wire f,f2;
+	//nand(f2,q2,q3);
+	fft(clk,1,q1,1);
+	and(f,q2,q1);
+	fft(clk,q1,q2,1);
+	fft(clk,f,q3,1);
+	
+	
+endmodule 

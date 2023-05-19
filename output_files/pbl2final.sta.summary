@@ -1,0 +1,305 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'divisor:comb_4|fft:comb_11|q'
+Slack : -2.861
+TNS   : -7.574
+
+Type  : Setup 'divisor:comb_4|fft:comb_26|q'
+Slack : -1.987
+TNS   : -102.323
+
+Type  : Setup 'divisor:comb_4|fft:comb_21|q'
+Slack : 0.190
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_6|q'
+Slack : 0.207
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_12|q'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_23|q'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_3|q'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_14|q'
+Slack : 0.227
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_16|q'
+Slack : 0.227
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_18|q'
+Slack : 0.227
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_10|q'
+Slack : 0.228
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_25|q'
+Slack : 0.228
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_8|q'
+Slack : 0.230
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_7|q'
+Slack : 0.266
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_13|q'
+Slack : 0.370
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_9|q'
+Slack : 0.370
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_17|q'
+Slack : 0.375
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_24|q'
+Slack : 0.382
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_22|q'
+Slack : 0.446
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_19|q'
+Slack : 0.448
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_20|q'
+Slack : 0.448
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_4|q'
+Slack : 0.450
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_5|q'
+Slack : 0.450
+TNS   : 0.000
+
+Type  : Setup 'divisor:comb_4|fft:comb_15|q'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Setup 'clk'
+Slack : 2.316
+TNS   : 0.000
+
+Type  : Hold 'divisor:comb_4|fft:comb_11|q'
+Slack : -2.889
+TNS   : -2.889
+
+Type  : Hold 'clk'
+Slack : -2.370
+TNS   : -2.370
+
+Type  : Hold 'divisor:comb_4|fft:comb_15|q'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Hold 'divisor:comb_4|fft:comb_19|q'
+Slack : -1.139
+TNS   : -1.139
+
+Type  : Hold 'divisor:comb_4|fft:comb_22|q'
+Slack : -0.838
+TNS   : -0.838
+
+Type  : Hold 'divisor:comb_4|fft:comb_5|q'
+Slack : -0.799
+TNS   : -0.799
+
+Type  : Hold 'divisor:comb_4|fft:comb_4|q'
+Slack : -0.650
+TNS   : -0.650
+
+Type  : Hold 'divisor:comb_4|fft:comb_20|q'
+Slack : -0.619
+TNS   : -0.619
+
+Type  : Hold 'divisor:comb_4|fft:comb_21|q'
+Slack : -0.543
+TNS   : -0.543
+
+Type  : Hold 'divisor:comb_4|fft:comb_7|q'
+Slack : -0.508
+TNS   : -0.508
+
+Type  : Hold 'divisor:comb_4|fft:comb_13|q'
+Slack : -0.507
+TNS   : -0.507
+
+Type  : Hold 'divisor:comb_4|fft:comb_9|q'
+Slack : -0.507
+TNS   : -0.507
+
+Type  : Hold 'divisor:comb_4|fft:comb_24|q'
+Slack : -0.506
+TNS   : -0.506
+
+Type  : Hold 'divisor:comb_4|fft:comb_8|q'
+Slack : -0.505
+TNS   : -0.505
+
+Type  : Hold 'divisor:comb_4|fft:comb_12|q'
+Slack : -0.504
+TNS   : -0.504
+
+Type  : Hold 'divisor:comb_4|fft:comb_17|q'
+Slack : -0.504
+TNS   : -0.504
+
+Type  : Hold 'divisor:comb_4|fft:comb_14|q'
+Slack : -0.503
+TNS   : -0.503
+
+Type  : Hold 'divisor:comb_4|fft:comb_18|q'
+Slack : -0.503
+TNS   : -0.503
+
+Type  : Hold 'divisor:comb_4|fft:comb_3|q'
+Slack : -0.503
+TNS   : -0.503
+
+Type  : Hold 'divisor:comb_4|fft:comb_10|q'
+Slack : -0.502
+TNS   : -0.502
+
+Type  : Hold 'divisor:comb_4|fft:comb_25|q'
+Slack : -0.502
+TNS   : -0.502
+
+Type  : Hold 'divisor:comb_4|fft:comb_16|q'
+Slack : -0.501
+TNS   : -0.501
+
+Type  : Hold 'divisor:comb_4|fft:comb_23|q'
+Slack : -0.500
+TNS   : -0.500
+
+Type  : Hold 'divisor:comb_4|fft:comb_6|q'
+Slack : -0.498
+TNS   : -0.498
+
+Type  : Hold 'divisor:comb_4|fft:comb_26|q'
+Slack : 1.641
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clk'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_10|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_11|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_12|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_13|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_14|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_15|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_16|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_17|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_18|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_19|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_20|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_21|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_22|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_23|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_24|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_25|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_26|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_3|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_4|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_5|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_6|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_7|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_8|q'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'divisor:comb_4|fft:comb_9|q'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------
